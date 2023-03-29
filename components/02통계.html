@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/colors/02통계.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/colors/nav-menu.css" type="text/css" />
+    <title>02통계</title>
+
+    <!-- <!DOCTYPE html>
+    <html lang="en"> -->
+    <style type="text/css">
+        .container-fluid {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 3vh;
+        }
+
+        .btn {
+            border-radius: 0rem;
+        }
+
+        .Rectangle-5 {
+            max-width: unset !important;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 2520px) {
+            .Rectangle-1 {
+                display: flex;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: unset;
+            }
+            .mainscreenn {
+                max-width: unset;
+                margin: 0 !important;
+            }
+            .nav-text1.diff,
+            .nav-text2.diff,
+            .nav-text3.diff {
+                font-size: 0.8vw;
+                margin-top: 1.2vw;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body class="mainscreenn">
+    <div class="Rectangle-1">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button id=navbarexpandbtn class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavbarSupportedContent"
+                aria-controls="collapsedNavbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" onclick=navbarButtonHandler()></span>
+            </button>
+
+
+
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/gnb-logo.png" class="gnb_logo float-center" />
+            </a>
+
+
+            <button class="btn navbar-btn search-btn" type="button" onclick=searchbarDisplay()>
+                <img id="searchButtonimg" src="../assets/img/ic-search-m.png" srcset="../assets/img/ic-search-m@2x.png 2x,
+      ../assets/img/ic-search-m@3x.png 3x" class="ic_search_m col-sm" />
+            </button>
+
+            <div class="Rectangle-collapse-searchBar" id="searchBar">
+
+                <form class="form-inline">
+
+                    <input class="Rectangle-searchInput col-sm" type="search" aria-label="Search" placeholder="검색어를 입력해주세요.">
+                    <button class="btn navbar-btn Rectangle-searchInputbtn" type="submit">
+                        <img src="../assets/img/ic-search-m.png" srcset="../assets/img/ic-search-m@2x.png 2x,
+                    ../assets/img/ic-search-m@3x.png 3x" class="ic_search_m col-sm" />
+                    </button>
+                    </input>
+                </form>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto justify-content-center">
+                    <li class="nav-item active my-2 my-lg-2 col-sm-2 col-md-2 col-lg-8">
+                        <form class="form-inline">
+
+                            <input class="Rectangle-3 diff col-sm" type="search" aria-label="Search" />
+                            <button class="btn navbar-btn Rectangle-4 diff" type="submit">
+                                <img src="../assets/img/ic-search.png" srcset="../assets/img/ic-search@2x.png 2x,
+                      ../assets/img/ic-search@3x.png 3x" class="ic_search">
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9 padBox">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-list.png" srcset="../assets/img/gnb-list@2x.png 2x,
+                      ../assets/img/gnb-list@3x.png 3x" class="gnb_list  diff Rectangle-100">
+                                <p class="nav-text1 diff ">거래목록</p>
+                                </img>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9 padBox two">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-graph.png" srcset="../assets/img/gnb-graph@2x.png 2x,
+                      ../assets/img/gnb-graph@3x.png 3x" class="gnb_graph  diff Rectangle-100">
+                                <p class="nav-text2 diff ">통계</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9 padBox three">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-rank.png" srcset="../assets/img/gnb-rank@2x.png 2x,
+                      ../assets/img/gnb-rank@3x.png 3x" class="gnb_rank  diff Rectangle-100">
+                                <p class="nav-text3  diff " style="margin-right: 0px;">순의</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="collapse navbar-collapse collapsed-navbar" id="collapsedNavbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto justify-content-center">
+
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns ">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-list.png" srcset="../assets/img/gnb-list@2x.png 2x,
+                    ../assets/img/gnb-list@3x.png 3x" class="gnb_list_compressed">
+                        <p class="nav-text1_compressed">거래목록</p>
+                        </img>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns ">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-graph.png" srcset="../assets/img/gnb-graph@2x.png 2x,
+                    ../assets/img/gnb-graph@3x.png 3x" class="gnb_graph_compressed">
+                        <p class="nav-text2_compressed">통계</p>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-rank.png" srcset="../assets/img/gnb-rank@2x.png 2x,
+                    ../assets/img/gnb-rank@3x.png 3x" class="gnb_rank_compressed">
+                        <p class="nav-text3_compressed">순의</p>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+    </div>
+    <script>
+        function searchbarDisplay() {
+
+            if (document.getElementById("searchBar").style.display == "block") {
+                document.getElementById("searchBar").style.display = "none";
+                document.getElementById("searchButtonimg").src = "../assets/img/ic-search-m.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/ic-search-m@2x.png 2x,../assets/img/ic-search-m@3x.png 3x";
+
+            } else {
+                var x = document.getElementById("navbarexpandbtn");
+                if (x.getAttribute("aria-expanded") == 'true') {
+                    x.click();
+
+                }
+                document.getElementById("searchBar").style.display = "block";
+                document.getElementById("searchButtonimg").src = "../assets/img/gnb-close.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/gnb-close@2x.png 2x,../assets/img/gnb-close@3x.png 3x";
+
+            }
+        }
+
+        function navbarButtonHandler() {
+            if (document.getElementById("searchBar").style.display == "block") {
+                document.getElementById("searchBar").style.display = "none";
+                document.getElementById("searchButtonimg").src = "../assets/img/ic-search-m.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/ic-search-m@2x.png 2x,../assets/img/ic-search-m@3x.png 3x";
+            }
+
+        }
+    </script>
+    <!-- </body> -->
+
+    <!-- </html> -->
+
+
+    <div class="row Rectangle-5 no-gutters align-items-center">
+        <div class="col-6 col-sm-3 m-auto p-4 padRectangle one">
+            <p class="small-grey">최신 버전</p>
+            <p class="bigPurple">43,533,613</p>
+        </div>
+        <div class="col-6 col-sm-3 m-auto p-1 padRectangle two">
+            <p class="small-grey">최신 버전</p>
+            <p class="bigPurple">43,533,613</p>
+        </div>
+        <div class="col-6 col-sm-3 m-auto p-1 padRectangle three">
+            <p class="small-grey">최신 버전</p>
+            <p class="bigPurple">43,533,613</p>
+        </div>
+        <div class="col-6 col-sm-3 m-auto p-1 padRectangle four">
+            <p class="small-grey">최신 버전</p>
+            <p class="bigPurple">43,533,613</p>
+        </div>
+    </div>
+
+    <div class="row Rectangle-17">
+        <div class="col-lg-7">
+            <div class="diagram1-conainer">
+                <div id="chartContainer" class="diagram1"></div>
+                <p class="diagram-logo">BLOCKCHAIN.COM</p>
+            </div>
+        </div>
+        <div class="row text-container-col justify-content-center">
+            <div class="col-lg-12 col-6">
+                <p class="diagram1-text1-grey">지난 24시간</p>
+                <p class="diagram1-text1-purple">9.45k TX</p>
+            </div>
+
+            <div class="col-lg-12 col-6">
+                <p class="diagram1-text1-grey">지난 24시간</p>
+
+                <span style="overflow: hidden">
+                    <p class="diagram1-text1-purple">9.45k TX</p>
+                    <p class="text20000">2020.00.00</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row Rectangle-17-container-secondrow mt-5 justify-content-center">
+        <div class="col Rectangle-17-third">
+            <div class="diagram1-conainer">
+                <div id="chartContainer-third" class="diagram1"></div>
+                <p class="diagram-logo">BLOCKCHAIN.COM</p>
+            </div>
+            <div class="row justify-content-center no-gutters">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <p class="diagram2-text1-grey">평균 30일</p>
+                    <p class="diagram2-text1-purple">주소 30.24m</p>
+                </div>
+
+                <div class="col-6">
+                    <p class="diagram2-text1-grey">30일 최고</p>
+                    <span style="overflow: hidden">
+                        <p class="diagram2-text1-purple">30.42m은 주소</p>
+                        <p class="text20000">2020.00.00</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col Rectangle-17-second">
+            <div class="diagram1-conainer">
+                <div id="chartContainer-second" class="diagram1"></div>
+                <p class="diagram-logo">BLOCKCHAIN.COM</p>
+            </div>
+            <div class="row justify-content-center no-gutters">
+                <div class="col-4">
+                    <p class="diagram3-text1-grey">지난 24시간</p>
+                    <p class="diagram3-text1-purple">9.45k TX</p>
+                </div>
+                <div class="col-4">
+                    <p class="diagram3-text1-grey">받은 숫자</p>
+                    <p class="diagram3-text2-blue">2.10k TX</p>
+                </div>
+                <div class="col-4">
+                    <p class="diagram3-text1-grey">보낸 숫자</p>
+                    <p class="diagram3-text3-lightblue">7.35k TX</p>
+                </div>
+            </div>
+        </div>
+        <div class="row Rectangle-8 justify-content-center">
+            <div class="Ellipse-2">
+                <img src="../assets/img/ic-facebook.png" srcset="
+                ../assets/img/ic-facebook@2x.png 2x,
+                ../assets/img/ic-facebook@3x.png 3x
+              " class="ic_facebook" />
+            </div>
+            <div class="Ellipse-2">
+                <img src="../assets/img/ic-twitter.png" srcset="
+                ../assets/img/ic-twitter@2x.png 2x,
+                ../assets/img/ic-twitter@3x.png 3x
+              " class="ic_twitter" />
+            </div>
+            <div class="Ellipse-2">
+                <img src="../assets/img/ic-email.png" srcset="
+                ../assets/img/ic-email@2x.png 2x,
+                ../assets/img/ic-email@3x.png 3x
+              " class="ic_email" />
+            </div>
+            <p class="last-text mt-5 pt-5">@ 2020 LibExplorer. 저작권 소유</p>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                zoomEnabled: true,
+                title: {
+                    colors: "#0087FF",
+                    padding: {
+                        top: 10,
+                        bottom: 20,
+                    },
+                    text: "총 거래수",
+                    fontSize: 16,
+                    fontWeight: "bold",
+                    verticalAlign: "top", // "top", "center", "bottom"
+                    horizontalAlign: "left", // "left", "right", "center"
+                    fontFamily: "NanumSquareB",
+                },
+                axisY: {
+                    suffix: "m",
+                    labelFontSize: 20,
+                    labelFontColor: "#B4B4B4",
+                    labelFontWeight: "bold",
+                    gridColor: "#F0F0F0",
+                    title: "USD",
+                    lineThickness: 8,
+                    lineColor: "white",
+                    titleFontColor: "#B4B4B4",
+                    titleFontSize: 16,
+                    titleFontWeight: "bold",
+                    tickLength: 0,
+                    titleFontFamily: "Times New Roman",
+                },
+                axisX: {
+                    margin: 20,
+                    lineThickness: 50,
+                    lineColor: "white",
+                    titleFontColor: "#04366B",
+                    titleFontSize: 16,
+                    titleFontWeight: "bold",
+                    tickLength: 32,
+                    tickColor: "#B4B4B4",
+                    titleFontFamily: "Times New Roman",
+                    labelFontColor: "#B4B4B4",
+                },
+                data: data, // random generator below
+            });
+            var chartSecond = new CanvasJS.Chart("chartContainer-second", {
+                animationEnabled: true,
+                zoomEnabled: true,
+                title: {
+                    colors: "#0087FF",
+                    padding: {
+                        top: 10,
+                        bottom: 20,
+                    },
+                    text: "24시간 거래 (시간별 거래량)",
+                    fontSize: 16,
+                    fontWeight: "bold",
+                    verticalAlign: "top", // "top", "center", "bottom"
+                    horizontalAlign: "left", // "left", "right", "center"
+                    fontFamily: "NanumSquareB",
+                },
+                axisY: {
+                    suffix: "k",
+                    labelFontSize: 20,
+                    labelFontColor: "#B4B4B4",
+                    labelFontWeight: "bold",
+                    gridColor: "#F0F0F0",
+                    lineThickness: 8,
+                    lineColor: "white",
+                    titleFontColor: "#B4B4B4",
+                    titleFontSize: 16,
+                    titleFontWeight: "bold",
+                    tickLength: 0,
+
+                    titleFontFamily: "Times New Roman",
+                },
+                axisX: {
+                    margin: 20,
+                    lineThickness: 50,
+                    lineColor: "white",
+                    titleFontColor: "#04366B",
+                    titleFontSize: 16,
+                    titleFontWeight: "bold",
+                    tickLength: 32,
+                    tickColor: "#B4B4B4",
+                    labelFontColor: "#B4B4B4",
+                    titleFontFamily: "Times New Roman",
+                },
+                data: datasecond, // random generator below
+            });
+            var chartThird = new CanvasJS.Chart("chartContainer-third", {
+                animationEnabled: true,
+                zoomEnabled: true,
+                title: {
+                    colors: "#0087FF",
+                    padding: {
+                        top: 10,
+                        bottom: 20,
+                    },
+                    text: "총 주소",
+                    fontSize: 16,
+                    fontWeight: "bold",
+                    verticalAlign: "top", // "top", "center", "bottom"
+                    horizontalAlign: "left", // "left", "right", "center"
+                    fontFamily: "NanumSquareB",
+                },
+                axisY: {
+                    suffix: "k",
+                    labelFontSize: 20,
+                    labelFontColor: "#B4B4B4",
+                    labelFontWeight: "bold",
+                    gridColor: "#F0F0F0",
+                    lineThickness: 8,
+                    lineColor: "white",
+                    titleFontColor: "#B4B4B4",
+                    titleFontSize: 16,
+                    titleFontWeight: "bold",
+                    tickLength: 0,
+                    titleFontFamily: "Times New Roman",
+                },
+                axisX: {
+                    margin: 20,
+                    lineThickness: 50,
+                    lineColor: "white",
+                    titleFontColor: "#04366B",
+                    titleFontSize: 16,
+                    titleFontWeight: "bold",
+                    tickLength: 32,
+                    tickColor: "#B4B4B4",
+                    labelFontColor: "#B4B4B4",
+                    titleFontFamily: "Times New Roman",
+                },
+                data: data, // random generator below
+            });
+            chart.render();
+            chartSecond.render();
+            chartThird.render();
+        };
+
+        var limit = 40;
+
+        var y = 0;
+        var data = [];
+        var dataSeries = {
+            type: "line",
+        };
+        var dataPoints = [];
+        var labels = ["October", "2020", "April", "July"];
+        var labelIter = -1;
+        for (var i = 0; i < limit; i += 1) {
+            y = Math.random() * 10;
+            if (i % 10 == 0 && labelIter < 4) {
+                labelIter++;
+            }
+            dataPoints.push({
+                x: i - limit / 2,
+                y: y,
+                label: labels[labelIter],
+                lineColor: "#0083FF",
+                dataPointMaxWidth: 1,
+            });
+        }
+        dataSeries.dataPoints = dataPoints;
+        data.push(dataSeries);
+
+        var limit = 70;
+
+        var y = 0;
+        var datasecond = [];
+        var dataSeries = {
+            type: "line",
+        };
+        var dataPoints = [];
+        var labels = [
+            "May17",
+            "May24",
+            "May31",
+            "Jun07",
+            "Jun14",
+            "Jun21",
+            "Jun28",
+            "Jul05",
+        ];
+        var labelIter = -1;
+        for (var i = 0; i < limit; i += 1) {
+            y = Math.random() * 10;
+            if (i % 10 == 0 && labelIter < 8) {
+                labelIter++;
+            }
+            dataPoints.push({
+                x: i - limit / 2,
+                y: y,
+                label: labels[labelIter],
+                lineColor: "#0083FF",
+                dataPointMaxWidth: 1,
+            });
+        }
+        dataSeries.dataPoints = dataPoints;
+        datasecond.push(dataSeries);
+    </script>
+    <script type="text/javascript" src="javascripts/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>

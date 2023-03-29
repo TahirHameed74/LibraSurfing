@@ -1,0 +1,757 @@
+/* html, body {
+    overflow-y: visible;
+    overflow-x: hidden;
+} */
+
+/* * {
+    outline: 1px solid red;
+} */
+.container-style {
+    width: 100%;
+    position: relative;
+}
+
+.padRectangle.one {
+    left: 5%;
+}
+.padRectangle.two {
+    left: 3%;
+}
+.padRectangle.three {
+    left: 0%;
+}
+.padRectangle.four {
+    left: -5%;
+}
+
+.bigPurple {
+    width: 100%;
+    height: 33px;
+    font-family: NanumSquareB;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    object-fit: contain;
+    color: #6725ff;
+}
+
+.small-grey {
+    width: 100%;
+    height: 15px;
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #777777;
+}
+
+.diagram-logo {
+    font-size: 20;
+    color: #04366b;
+    font-weight: bold;
+    transform: translate(55%, -360%);
+    position: absolute;
+    z-index: 1;
+}
+
+.ic_twitter {
+    width: 27px;
+    height: 21px;
+    object-fit: contain;
+    opacity: 1;
+    transform: translate(45%, 58%);
+}
+
+.ic_email {
+    width: 28px;
+    height: 22px;
+    object-fit: contain;
+    opacity: 1;
+    transform: translate(36%, 50%);
+}
+
+.ic_facebook {
+    width: 14px;
+    height: 29px;
+    object-fit: contain;
+    opacity: 1;
+    transform: translate(125%, 30%);
+}
+
+.Ellipse-2 {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    margin: 5px;
+    z-index: 1;
+    transform: translateY(30%);
+}
+
+.last-text {
+    width: 50%;
+    height: 16px;
+    font-family: NanumSquareR;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    position: absolute;
+    text-align: center;
+    color: #999999;
+    transform: translateY(-40%);
+}
+
+.above-diagram-text {
+    height: 16px;
+    font-family: NanumSquareB;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    padding-left: 15px;
+    color: #061638;
+}
+
+.text-container-col {
+    height: 150px;
+    margin-top: 20px;
+}
+
+.Rectangle-17 {
+    /* width: calc(100% - 100px); */
+    width: 80%;
+    height: 600px;
+    border-radius: 3px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Rectangle-17-container {
+    width: calc(100% - 100px);
+    height: 600px;
+    border-radius: 3px;
+    border: solid 1px #eeeeee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Rectangle-8 {
+    width: 100%;
+    height: 100px;
+    box-shadow: inset 0px 1px 0 0 #eeeeee;
+    background-color: #ffffff;
+    margin-top: 10%;
+}
+
+.Rectangle-17-container-secondrow {
+    /* width: calc(100% - 100px); */
+    width: 82%;
+    transform: translateX(11%);
+    height: 600px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.Rectangle-17-second {
+    width: auto;
+    height: 600px;
+    border-radius: 3px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.Rectangle-17-third {
+    width: 40%;
+    height: 600px;
+    border-radius: 3px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: 10px;
+    transform: translateX(5%);
+}
+
+.Rectangle-5 {
+    margin-right: auto;
+    background-color: #fafbfe;
+    transform: translateY(3px);
+    margin-top: 3vh;
+}
+
+.text20000 {
+    width: 50%;
+    height: 21px;
+    font-family: NanumSquareR;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    float: right;
+    color: #999999;
+}
+
+.diagram1-conainer {
+    overflow-y: hidden;
+    height: 480px;
+    /* width: 50%; */
+}
+
+.diagram1 {
+    width: 460px;
+    height: 480px;
+    max-width: 600px;
+    margin-left: 0px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.diagram1-text1-grey {
+    width: 100%;
+    height: 15px;
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+
+.diagram2-text1-grey {
+    width: 100%;
+    height: 15px;
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+
+.diagram3-text1-grey {
+    width: 100%;
+    height: 15px;
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+
+.diagram2-text1-purple {
+    float: left;
+    width: 50%;
+    height: 18px;
+    font-family: NanumSquareB;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6725ff;
+}
+
+.diagram3-text1-purple {
+    width: 100%;
+    height: 17px;
+    font-family: NanumSquareB;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6725ff;
+}
+
+.diagram1-text1-purple {
+    float: left;
+    width: 50%;
+    height: 17px;
+    font-family: NanumSquareB;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6725ff;
+}
+
+.diagram3-text2-blue {
+    width: 100%;
+    height: 17px;
+    font-family: NanumSquareB;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3566f6;
+}
+
+.diagram3-text3-lightblue {
+    width: 100%;
+    height: 17px;
+    font-family: NanumSquareB;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2fdbdb;
+}
+
+.Layer-4 {
+    width: 811px;
+    height: 440px;
+}
+
+@media screen and (max-width: 1170px) {
+    .Rectangle-17-third {
+        width: auto;
+        height: 600px;
+        border-radius: 3px;
+        border: solid 1px #eeeeee;
+        background-color: #ffffff;
+        margin-left: auto;
+        margin-right: 0px;
+    }
+    .Rectangle-17-second {
+        width: auto;
+        height: 600px;
+        border-radius: 3px;
+        border: solid 1px #eeeeee;
+        background-color: #ffffff;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 994px) {
+    .padRectangle.one,
+    .padRectangle.two,
+    .padRectangle.three,
+    .padRectangle.four
+    {
+        left: 0%;
+    }
+    .Rectangle-17 {
+        width: 80%;
+        transform: translateX(0%);
+        margin-top: 10px;
+    }
+    .Rectangle-17-third {
+        margin-left: 10%;
+        width: 100%;
+        transform: translateX(0%);
+    }
+    .Rectangle-17-second {
+        margin-left: 10%;
+    }
+    .Rectangle-8 {
+        width: 100%;
+        margin-left: 5%;
+    }
+    .last-text {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        .Rectangle-17-third,
+        .Rectangle-17-second {
+            margin-left: 5%;
+        }
+        .Rectangle-8 {
+            margin-left: 3%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .text20000 {
+        width: 30%;
+        height: 21px;
+        font-family: NanumSquareR;
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        float: right;
+        color: #999999;
+    }
+    .diagram-logo {
+        color: #04366b;
+        font-weight: bold;
+        transform: translate(55%, -360%);
+        position: absolute;
+        z-index: 1;
+    }
+    .bigPurple {
+        width: 100%;
+        height: 33px;
+        font-family: NanumSquareB;
+        font-size: 28px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #6725ff;
+    }
+    .above-diagram-text {
+        width: 100%;
+        height: 16px;
+        font-family: NanumSquareB;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #061638;
+    }
+    .text-container-col {
+        height: 150px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .diagram1-text1-grey {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareR;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+    }
+    .diagram2-text1-grey {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareR;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+    }
+    .diagram3-text1-grey {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareR;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+    }
+    .diagram2-text1-purple {
+        float: left;
+        width: 50%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #6725ff;
+    }
+    .diagram3-text1-purple {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #6725ff;
+    }
+    .diagram1-text1-purple {
+        float: left;
+        width: 50%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #6725ff;
+    }
+    .diagram3-text2-blue {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3566f6;
+    }
+    .diagram3-text3-lightblue {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2fdbdb;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 499px) {
+    .text20000 {
+        width: auto;
+        height: 21px;
+        font-family: NanumSquareR;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        float: right;
+        color: #999999;
+    }
+    .diagram-logo {
+        font-size: 80%;
+        color: #04366b;
+        font-weight: bold;
+        transform: translate(30%, -400%);
+        position: absolute;
+        z-index: 1;
+    }
+    .bigPurple {
+        width: 100%;
+        height: 33px;
+        font-family: NanumSquareB;
+        font-size: 28px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #6725ff;
+    }
+    .above-diagram-text {
+        width: 100%;
+        height: 16px;
+        font-family: NanumSquareB;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #061638;
+    }
+    .text-container-col {
+        height: 150px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .diagram1-text1-grey {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareR;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+    }
+    .diagram2-text1-grey {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareR;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+    }
+    .diagram3-text1-grey {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareR;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+    }
+    .diagram2-text1-purple {
+        float: left;
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #6725ff;
+    }
+    .diagram3-text1-purple {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #6725ff;
+    }
+    .diagram1-text1-purple {
+        float: left;
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        float: left;
+        color: #6725ff;
+    }
+    .diagram3-text2-blue {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3566f6;
+    }
+    .diagram3-text3-lightblue {
+        width: 100%;
+        height: 10px;
+        font-family: NanumSquareB;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2fdbdb;
+    }
+}
+
+
+@media screen and (min-width: 1921px)
+{
+        /*  Header background */
+    .mainscreenn{
+        max-width: 1920px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .Rectangle-1{
+         max-width: 1920px;
+    }
+
+}
+
+@media screen and (min-width: 1500px)
+{
+    .Rectangle-17-container-secondrow {
+        transform: translateX(10%);
+    }
+
+}

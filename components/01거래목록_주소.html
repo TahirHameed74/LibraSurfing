@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01거래목록_주소</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascripts/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV "
+        crossorigin="anonymous "></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/colors/nav-menu.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/colors/01거래목록_주소.css" />
+    <style type="text/css">
+        .container-fluid {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 4vh;
+        }
+
+        .btn {
+            border-radius: 0rem;
+        }
+
+        .Rectangle-5 {
+            max-width: unset !important;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+
+        @media screen and (min-width: 2520px) {
+            .Rectangle-1 {
+                display: flex;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: unset;
+            }
+            .mainscreenn {
+                max-width: unset;
+                margin: 0 !important;
+            }
+            .nav-text1.diff,
+            .nav-text2.diff,
+            .nav-text3.diff {
+                font-size: 0.8vw;
+                margin-top: 1.2vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="mainscreenn">
+    <div class="Rectangle-1">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button id=navbarexpandbtn class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavbarSupportedContent"
+                aria-controls="collapsedNavbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" onclick=navbarButtonHandler()></span>
+            </button>
+
+
+
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/gnb-logo.png" class="gnb_logo float-center" />
+            </a>
+
+
+            <button class="btn navbar-btn search-btn" type="button" onclick=searchbarDisplay()>
+                <img id="searchButtonimg" src="../assets/img/ic-search-m.png" srcset="../assets/img/ic-search-m@2x.png 2x,
+      ../assets/img/ic-search-m@3x.png 3x" class="ic_search_m col-sm" />
+            </button>
+
+            <div class="Rectangle-collapse-searchBar" id="searchBar">
+
+                <form class="form-inline">
+
+                    <input class="Rectangle-searchInput col-sm" type="search" aria-label="Search" placeholder="검색어를 입력해주세요.">
+                    <button class="btn navbar-btn Rectangle-searchInputbtn" type="submit">
+                        <img src="../assets/img/ic-search-m.png" srcset="../assets/img/ic-search-m@2x.png 2x,
+                    ../assets/img/ic-search-m@3x.png 3x" class="ic_search_m col-sm" />
+                    </button>
+                    </input>
+                </form>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto justify-content-center">
+                    <li class="nav-item active my-2 my-lg-2 col-sm-2 col-md-2 col-lg-8">
+                        <form class="form-inline">
+
+                            <input class="Rectangle-3 diff col-sm" type="search" aria-label="Search" />
+                            <button class="btn navbar-btn Rectangle-4 diff" type="submit">
+                                <img src="../assets/img/ic-search.png" srcset="../assets/img/ic-search@2x.png 2x,
+                      ../assets/img/ic-search@3x.png 3x" class="ic_search">
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9 padBox">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-list.png" srcset="../assets/img/gnb-list@2x.png 2x,
+                      ../assets/img/gnb-list@3x.png 3x" class="gnb_list diff Rectangle-100">
+                                <p class="nav-text1 diff">거래목록</p>
+                                </img>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9 padBox two">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-graph.png" srcset="../assets/img/gnb-graph@2x.png 2x,
+                      ../assets/img/gnb-graph@3x.png 3x" class="gnb_graph  diff Rectangle-100">
+                                <p class="nav-text2 diff">통계</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9 padBox three">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-rank.png" srcset="../assets/img/gnb-rank@2x.png 2x,
+                      ../assets/img/gnb-rank@3x.png 3x" class="gnb_rank  diff Rectangle-100">
+                                <p class="nav-text3 diff">순의</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="collapse navbar-collapse collapsed-navbar" id="collapsedNavbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto justify-content-center">
+
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns ">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-list.png" srcset="../assets/img/gnb-list@2x.png 2x,
+                    ../assets/img/gnb-list@3x.png 3x" class="gnb_list_compressed">
+                        <p class="nav-text1_compressed">거래목록</p>
+                        </img>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns ">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-graph.png" srcset="../assets/img/gnb-graph@2x.png 2x,
+                    ../assets/img/gnb-graph@3x.png 3x" class="gnb_graph_compressed">
+                        <p class="nav-text2_compressed">통계</p>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-rank.png" srcset="../assets/img/gnb-rank@2x.png 2x,
+                    ../assets/img/gnb-rank@3x.png 3x" class="gnb_rank_compressed">
+                        <p class="nav-text3_compressed">순의</p>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+    </div>
+    </nav>
+    </div>
+    <script>
+        function searchbarDisplay() {
+
+            if (document.getElementById("searchBar").style.display == "block") {
+                document.getElementById("searchBar").style.display = "none";
+                document.getElementById("searchButtonimg").src = "../assets/img/ic-search-m.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/ic-search-m@2x.png 2x,../assets/img/ic-search-m@3x.png 3x";
+
+            } else {
+                var x = document.getElementById("navbarexpandbtn");
+                if (x.getAttribute("aria-expanded") == 'true') {
+                    x.click();
+
+                }
+                document.getElementById("searchBar").style.display = "block";
+                document.getElementById("searchButtonimg").src = "../assets/img/gnb-close.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/gnb-close@2x.png 2x,../assets/img/gnb-close@3x.png 3x";
+
+            }
+        }
+
+        function navbarButtonHandler() {
+            if (document.getElementById("searchBar").style.display == "block") {
+                document.getElementById("searchBar").style.display = "none";
+                document.getElementById("searchButtonimg").src = "../assets/img/ic-search-m.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/ic-search-m@2x.png 2x,../assets/img/ic-search-m@3x.png 3x";
+            }
+
+        }
+    </script>
+    <div class="container-fluid">
+        <!-- Modal Box -->
+        <div class="Layer-592" id="modalQR">
+            <div class="Rectangle-16">
+                <img src="../assets/img/ic-pop-logo.png" srcset="
+              ../assets/img/ic-pop-logo@2x.png 2x,
+              ../assets/img/ic-pop-logo@3x.png 3x
+            " class="ic_pop_logo" />
+
+                <img src="../assets/img/ic-pop-close.png" srcset="
+              ../assets/img/ic-pop-close@2x.png 2x,
+              ../assets/img/ic-pop-close@3x.png 3x
+            " class="ic_pop_close" id="modalClose" />
+
+                <img src="../assets/img/img-pop-2.png" srcset="
+              ../assets/img/img-pop-2@2x.png 2x,
+              ../assets/img/img-pop-2@3x.png 3x
+            " class="img_pop_2" />
+
+                <div class="Rectangle-15-copy">
+                    <!-- QR Codes for popup -->
+
+                    <!--  QR Code for mobile -->
+                    <div id="qrcodeMobPm"></div>
+                    <div id="qrcodeMobPl"></div>
+
+                    <!-- QR code for tablet -->
+                    <div id="qrcodeTabPm"></div>
+                    <div id="qrcodeTabPl"></div>
+                    <div id="qrcodeTabPlm"></div>
+                </div>
+
+                <img src="../assets/img/img-pop-1.png" srcset="
+              ../assets/img/img-pop-1@2x.png 2x,
+              ../assets/img/img-pop-1@3x.png 3x
+            " class="img_pop_1" />
+
+                <div class="bottomBoxQR">
+                    <div class="topRectangle">
+                        <span class="QR-"> QR 코드 주소 </span>
+                    </div>
+                    <div class="bottomRectangle">
+                        <span class="de5bb622c235a681b898929cecf7">
+                            0468de5bb622c235a681b898929cecf7
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NavBar Area -->
+
+
+        <!-- Main Heaidng Background -->
+        <div class="headerBox">
+            <!-- Bg image -->
+            <img src="../assets/img/img-visual-2.png" srcset="
+            ../assets/img/img-visual-2@2x.png 2x,
+            ../assets/img/img-visual-2@3x.png 3x
+          " class="img_visual_2" />
+
+            <!-- Bg Image Mobile -->
+            <img src="../assets/img/img-visual-2m.png" srcset="
+            ../assets/img/img-visual-2@2xm.png 2x,
+            ../assets/img/img-visual-2@3xm.png 3x
+          " class="img_visual_2m" />
+
+            <!-- Top middle text -->
+            <div class="Rectangle-599">
+                <img src="../assets/img/ic-pop-copy.png" srcset="
+              ../assets/img/ic-pop-copy@2x.png 2x,
+              ../assets/img/ic-pop-copy@3x.png 3x
+            " class="ic_pop_copy" />
+
+                <span class="-"> 클립보드에 복사 완료 </span>
+            </div>
+
+            <!-- Left Top Text -->
+            <div class="Rectangle-topLeft">
+                <span class="-"> 주소 정보 </span>
+            </div>
+
+            <!-- Left Bottom Box -->
+            <div class="Rectangle-bottomLeft">
+                <span class="de5bb622c235a681b898929cecf7">
+                    0468de5bb622c235a681b898929cecf7
+                </span>
+                <div class="Ellipse-5">
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy" />
+                </div>
+            </div>
+
+            <!-- QR Box -->
+            <div id="mOnly">
+                <div class="Rectangle-15" id="modalBox">
+                    <!--  QR Code for mobile -->
+                    <div id="qrcodeMobS"></div>
+
+                    <!--  QR Code for mobile -->
+                    <div id="qrcodeMobM"></div>
+
+                    <!--  QR Code for mobile -->
+                    <div id="qrcodeMobL"></div>
+
+                    <!-- QR code for tablet -->
+                    <div id="qrcodeTabM"></div>
+
+                    <!-- QR code for tablet -->
+                    <div id="qrcodeTabL"></div>
+
+                    <div class="Ellipse-6" id="icDel">
+                        <img src="../assets/img/ic-qr-zoom.png" srcset="
+                  ../assets/img/ic-qr-zoom@2x.png 2x,
+                  ../assets/img/ic-qr-zoom@3x.png 3x
+                " class="ic_qr_zoom" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="dOnly">
+                <div class="Rectangle-15">
+                    <!-- QR code for Desktop -->
+                    <div id="qrcodeDesktop"></div>
+                    <div id="qrcode4K"></div>
+
+                    <!-- <div class="Ellipse-6">
+                        <img src="../assets/img/ic-qr-zoom.png"
+                        srcset="../assets/img/ic-qr-zoom@2x.png 2x,
+                                ../assets/img/ic-qr-zoom@3x.png 3x"
+                        class="ic_qr_zoom">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Upper Table -->
+        <div class="Rectangle-tableTop dT">
+            <!-- Heading -->
+            <div class="Rectangle-heading">개요</div>
+            <div class="Rectangle-heading h2">통계</div>
+
+            <!-- First Row -->
+            <div class="Rectangle-7 one">
+                <span class="-"> 받은 숫자 </span>
+                <span class="tempText"> 0000 </span>
+            </div>
+            <div class="Rectangle-7 two">
+                <span class="-"> 총거래수 </span>
+                <span class="tempText"> 0000 </span>
+            </div>
+
+            <!-- Second Row -->
+            <div class="Rectangle-7 three">
+                <span class="-"> 보낸 숫자 </span>
+                <span class="tempText"> 0000 </span>
+            </div>
+            <div class="Rectangle-7 four">
+                <div class="innerRectangle">
+                    <span class="-TX"> 전송된 TX </span>
+                    <span class="tempText"> 00 </span>
+                </div>
+            </div>
+            <div class="Rectangle-7-copy five">
+                <span class="-TX padText"> 수신된 TX </span>
+                <span class="tempText"> 00 </span>
+            </div>
+
+            <!-- Third row -->
+            <div class="Rectangle-7 six">
+                <span class="-">
+                    보낸 숫자
+                    <img src="../assets/img/ic-question.png" srcset="
+                ../assets/img/ic-question@2x.png 2x,
+                ../assets/img/ic-question@3x.png 3x
+              " class="ic_question" />
+                </span>
+                <span class="tempText style2"> 0000 </span>
+            </div>
+            <div class="Rectangle-7 seven">
+                <div class="innerRectangle">
+                    <span class="-TX"> 총 TX </span>
+                    <span class="tempText"> 00 </span>
+                </div>
+            </div>
+            <div class="Rectangle-7-copy eight">
+                <span class="-TX padText"> 전송 실패 TX </span>
+                <span class="tempText"> 00 </span>
+            </div>
+
+            <!-- Fourth Row -->
+            <div class="Rectangle-7 nine">
+                <span class="-"> 리브라 총금액 </span>
+                <span class="-LIB ft">
+                    3,000,329.917213
+                    <span class="text-style-1"> LIB </span>
+                </span>
+            </div>
+            <div class="Rectangle-7 ten">
+                <div class="innerRectangle">
+                    <span class="-TX"> 수신 실패 TX </span>
+                    <span class="tempText style2"> 00 </span>
+                </div>
+            </div>
+            <div class="Rectangle-7-copy eleven">
+                <span class="-TX padText"> 총 실패 TX </span>
+                <span class="tempText"> 00 </span>
+            </div>
+        </div>
+
+        <!-- Top table Mobile view -->
+        <div class="mobTab Rectangle-tableTop">
+            <!-- Heading -->
+            <div class="Rectangle-heading">개요</div>
+
+            <!-- First Row -->
+            <div class="Rectangle-7 one">
+                <span class="-"> 받은 숫자 </span>
+                <span class="tempText"> 0000 </span>
+            </div>
+
+            <!-- Second Row -->
+            <div class="Rectangle-7 three">
+                <span class="-"> 보낸 숫자 </span>
+                <span class="tempText"> 0000 </span>
+            </div>
+
+            <!-- Third Row -->
+            <div class="Rectangle-7 six">
+                <span class="-">
+                    보낸 숫자
+                    <img src="../assets/img/ic-question.png" srcset="
+                ../assets/img/ic-question@2x.png 2x,
+                ../assets/img/ic-question@3x.png 3x
+              " class="ic_question" />
+                </span>
+                <span class="tempText style2"> 0000 </span>
+            </div>
+
+            <!-- Fourth Row -->
+            <div class="Rectangle-7 nine">
+                <span class="-"> 리브라 총금액 </span>
+                <span class="-LIB ft" id="libPad">
+                    3,000,329.917213
+                    <span class="text-style-1"> LIB </span>
+                </span>
+            </div>
+
+            <!-- Second Heading -->
+            <div class="Rectangle-heading h2">통계</div>
+
+            <!-- Fifth row -->
+            <div class="Rectangle-7 two">
+                <span class="-"> 총거래수 </span>
+                <span class="tempText"> 0000 </span>
+            </div>
+
+            <!-- Sixth Row -->
+            <div class="Rectangle-7 four">
+                <div class="innerRectangle">
+                    <span class="-TX"> 전송된 TX </span>
+                    <span class="tempText"> 00 </span>
+                </div>
+            </div>
+
+            <div class="Rectangle-7-copy five">
+                <span class="-TX padText"> 수신된 TX </span>
+                <span class="tempText"> 00 </span>
+            </div>
+
+            <!-- Seventh Row -->
+            <div class="Rectangle-7 seven">
+                <div class="innerRectangle">
+                    <span class="-TX"> 총 TX </span>
+                    <span class="tempText"> 00 </span>
+                </div>
+            </div>
+            <div class="Rectangle-7-copy eight">
+                <span class="-TX padText"> 전송 실패 TX </span>
+                <span class="tempText"> 00 </span>
+            </div>
+
+            <!-- Eigth Row -->
+            <div class="Rectangle-7 ten">
+                <div class="innerRectangle">
+                    <span class="-TX"> 수신 실패 TX </span>
+                    <span class="tempText style2"> 00 </span>
+                </div>
+            </div>
+            <div class="Rectangle-7-copy eleven">
+                <span class="-TX padText"> 총 실패 TX </span>
+                <span class="tempText"> 00 </span>
+            </div>
+        </div>
+
+        <!-- Prev Page Code -->
+
+        <!-- White Box for heaidngs and buttons -->
+
+        <div class="whiteBoxTop">
+            <!-- Left Top Heading Above the Table -->
+            <div class="-524">총  20건의 거래 중 최신 15 개</div>
+
+            <!-- First Button on the left -->
+            <button class="btn Rectangle-10">
+                <span class="btnText"> 오름차순 </span>
+                <span>
+                    <img src="../assets/img/ic-select.png" srcset="
+                ../assets/img/ic-select@2x.png 2x,
+                ../assets/img/ic-select@3x.png 3x
+              " class="ic_select" />
+                </span>
+            </button>
+
+            <!-- Second Button on the left -->
+            <button class="btn Rectangle-10 right">
+                <span class="btnSecondText"> 000개씩 </span>
+                <span>
+                    <img src="../assets/img/ic-select.png" srcset="
+                ../assets/img/ic-select@2x.png 2x,
+                ../assets/img/ic-select@3x.png 3x
+              " class="ic_select" />
+                </span>
+            </button>
+
+            <!-- Left Directional Button -->
+            <button class="btn Rectangle-11 top">
+                <i class="fa fa-angle-left fa-2x Shape-1-2"></i>
+            </button>
+
+            <!-- InfoBox Between Directional Buttons -->
+            <div class="Rectangle-11-copy-2 top infoBoxText">000000</div>
+
+            <!-- Right Directional Button -->
+            <button class="btn Rectangle-11-copy top">
+                <i class="fa fa-angle-right fa-2x Shape-1-2-copy"></i>
+            </button>
+
+            <!-- Info Num Box -->
+            <div class="infoNumBox top">/5,241</div>
+        </div>
+
+        <!-- Table 1 -->
+
+        <div class="Rectangle-7 Rectangle-11">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 2 -->
+        <div class="Rectangle-7 Rectangle-11">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 3 -->
+
+        <div class="Rectangle-7 Rectangle-11">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 4 -->
+
+        <div class="Rectangle-7 Rectangle-11">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 5 -->
+
+        <div class="Rectangle-7 Rectangle-11 tableView">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 6 -->
+
+        <div class="Rectangle-7 Rectangle-11 tableView">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 7 -->
+
+        <div class="Rectangle-7 Rectangle-11 tableView">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 8 -->
+
+        <div class="Rectangle-7 Rectangle-11 tableView">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 9 -->
+
+        <div class="Rectangle-7 Rectangle-11 tableView">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table 10 -->
+
+        <div class="Rectangle-7 Rectangle-11 tableView">
+            <div class="box number">1</div>
+
+            <div class="box one">
+                <div class="TX-ID" id="padTopRow">TX ID</div>
+                <div class="bodyText style-1 padText">
+                    35516177
+                    <button class="btn">
+                        <img src="../assets/img/ic-error.png" srcset="
+                  ../assets/img/ic-error@2x.png 2x,
+                  ../assets/img/ic-error@3x.png 3x
+                " class="ic_error" />
+                    </button>
+                </div>
+            </div>
+            <div class="outerRec one">
+                <div class="box two">
+                    <div class="TX-ID">만료시간</div>
+                    <div class="-">10초 전</div>
+                </div>
+
+                <div class="box three">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="p2p">p2p</div>
+                </div>
+            </div>
+
+            <div class="outerRec two">
+                <div class="box four">
+                    <div class="TX-ID">받은 주소</div>
+                    <div class="f8c5259d3c787e7a">f8c5259d….3c787e7a</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy two" />
+                </div>
+
+                <div class="box five">
+                    <div class="TX-ID">보낸 주소</div>
+                    <div class="b5e88-0af5c3e5">172b5e88 .... 0af5c3e5</div>
+                    <img src="../assets/img/ic-address-copy.png" srcset="
+                ../assets/img/ic-address-copy@2x.png 2x,
+                ../assets/img/ic-address-copy@3x.png 3x
+              " class="ic_address_copy three" />
+                </div>
+            </div>
+
+            <div class="outerRec three">
+                <div class="box six">
+                    <div class="TX-ID">양</div>
+                    <div class="-LIB">10 LIB</div>
+                </div>
+
+                <div class="box seven">
+                    <div class="TX-ID">TX 수수료</div>
+                    <div class="-LIB">000 LIB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button and bottom directional Buttons-->
+
+        <div class="bottomWhiteBox">
+            <!-- Submit Button Button -->
+            <button class="btn Rectangle-12">다음</button>
+
+            <!-- Left Directional Button -->
+            <button class="btn Rectangle-11 bottom">
+                <i class="fa fa-angle-left fa-2x Shape-1-2"></i>
+            </button>
+
+            <!-- InfoBox Between Directional Buttons -->
+            <div class="Rectangle-11-copy-2 bottom infoBoxText">000000</div>
+
+            <!-- Right Directional Button -->
+            <button class="btn Rectangle-11-copy bottom">
+                <i class="fa fa-angle-right fa-2x Shape-1-2-copy"></i>
+            </button>
+
+            <!-- Info Num Box -->
+            <div class="infoNumBox bottom">/5,241</div>
+        </div>
+
+        <!-- Bottom Box for Social Media Icons -->
+
+        <div class="Rectangle-8">
+            <!-- FaceBook Button -->
+            <button class="btn Ellipse-2 fb">
+                <img src="../assets/img/ic-facebook.png" srcset="
+              ../assets/img/ic-facebook@2x.png 2x,
+              ../assets/img/ic-facebook@3x.png 3x
+            " class="ic_facebook" />
+            </button>
+
+            <!-- Twitter Button -->
+            <button class="btn Ellipse-2 twitter">
+                <img src="../assets/img/ic-twitter.png" srcset="
+              ../assets/img/ic-twitter@2x.png 2x,
+              ../assets/img/ic-twitter@3x.png 3x
+            " class="ic_twitter" />
+            </button>
+
+            <!-- Email Button -->
+            <button class="btn Ellipse-2 email">
+                <img src="../assets/img/ic-email.png" srcset="
+              ../assets/img/ic-email@2x.png 2x,
+              ../assets/img/ic-email@3x.png 3x
+            " class="ic_email" />
+            </button>
+
+            <!-- Copyright Text -->
+            <span class="-2020-LibExplorer-">
+                @ 2020 LibExplorer. 저작권 소유
+            </span>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("modalQR");
+        var ic = document.getElementById("icDel");
+
+        var QR = document.getElementById("modalBox");
+
+        var close = document.getElementById("modalClose");
+
+        QR.onclick = function () {
+            modal.style.display = "block";
+            ic.style.display = "none";
+        };
+
+        close.onclick = function () {
+            modal.style.display = "none";
+            ic.style.display = "block";
+        };
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                ic.style.display = "block";
+            }
+        };
+    </script>
+
+    <script type="text/javascript">
+        var qrcode = new QRCode(document.getElementById("qrcodeMobM"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 100,
+            height: 100,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode = new QRCode(document.getElementById("qrcodeMobS"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 85,
+            height: 85,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode = new QRCode(document.getElementById("qrcodeMobL"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 115,
+            height: 115,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode2 = new QRCode(document.getElementById("qrcodeTabM"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 190,
+            height: 190,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode2 = new QRCode(document.getElementById("qrcodeTabL"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 230,
+            height: 230,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode3 = new QRCode(document.getElementById("qrcodeDesktop"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 90,
+            height: 90,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode4 = new QRCode(document.getElementById("qrcodeMobPm"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 150,
+            height: 150,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode4 = new QRCode(document.getElementById("qrcodeMobPl"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 170,
+            height: 170,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode5 = new QRCode(document.getElementById("qrcodeTabPm"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 300,
+            height: 300,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode5 = new QRCode(document.getElementById("qrcodeTabPl"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 350,
+            height: 350,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode5 = new QRCode(document.getElementById("qrcodeTabPlm"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 320,
+            height: 320,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+
+    <script type="text/javascript">
+        var qrcode5 = new QRCode(document.getElementById("qrcode4K"), {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 190,
+            height: 190,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    </script>
+</body>
+
+</html>

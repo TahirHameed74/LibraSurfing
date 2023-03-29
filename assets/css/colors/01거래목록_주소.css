@@ -1,0 +1,2647 @@
+/* Adding Fonts */
+
+@font-face {
+    font-family: NanumSquareB;
+    src: url(fonts/NanumSquareB.ttf);
+}
+
+@font-face {
+    font-family: NanumSquareR;
+    src: url(fonts/NanumSquareR.ttf);
+}
+
+html,
+body {
+    overflow-x: hidden;
+} 
+
+/*  Main Heading Box */
+
+.headerBox {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.img_visual_2 {
+    width: 100%;
+    /* height: 240px; */
+    object-fit: contain;
+}
+
+.img_visual_2m {
+    width: 100%;
+    /* height: 610px; */
+    object-fit: contain;
+    display: none;
+}
+
+.Rectangle-599 {
+    width: 170px;
+    height: 40px;
+    opacity: 0.5;
+    border-radius: 6px;
+    background-color: #000000;
+    position: absolute;
+    left: 38%;
+    top: 10%;
+}
+
+.ic_pop_copy {
+    width: 17px;
+    height: 12px;
+    object-fit: contain;
+    /* background-color: #ffffff; */
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.Rectangle-599 .\- {
+    /* width: 90px; */
+    height: 14px;
+    font-family: NanumSquareB;
+    /* font-size: 12px; */
+    font-size: 0.8em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /* display: inline; */
+    position: absolute;
+    top: 27%;
+    left: 25%;
+}
+
+.Rectangle-topLeft {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.Rectangle-topLeft .\- {
+    width: 60px;
+    height: 14px;
+    font-family: NanumSquareR;
+    font-size: 0.8em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #777777;
+}
+
+.Rectangle-bottomLeft {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+
+.Rectangle-bottomLeft .de5bb622c235a681b898929cecf7 {
+    width: 584px;
+    height: 24px;
+    font-family: NanumSquareB;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6725ff;
+}
+
+.Ellipse-5 {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #dddddd;
+    background-color: #fafbfe;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.ic_address_copy {
+    width: 14px;
+    height: 16px;
+    object-fit: contain;
+    opacity: 0.8;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    /* background-color: #000000; */
+}
+
+.ic_address_copy.two {
+    left: 71%;
+    top: 50%;
+}
+
+.ic_address_copy.three {
+    left: 74%;
+    top: 50%;
+}
+
+.Rectangle-15 {
+    width: 90px;
+    height: 90px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 23%;
+    left: 72%;
+}
+
+.Layer-1 {
+    width: 143px;
+    height: 148px;
+}
+
+.Ellipse-6 {
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: #000000;
+    position: relative;
+    top: -40%;
+    right: -60%;
+}
+
+.ic_qr_zoom {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+    position: absolute;
+    left: 23%;
+    top: 23%;
+    /* background-color: #ffffff; */
+}
+
+#icDel {
+    display: block;
+}
+
+
+/* Modal Box */
+
+.Layer-592 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.9;
+    left: 0%;
+}
+
+.Rectangle-16 {
+    width: 280px;
+    height: 380px;
+    border-radius: 12px;
+    background-color: #6725ff;
+    position: relative;
+    left: 13%;
+    top: 20%;
+}
+
+.Rectangle-15-copy {
+    width: 165px;
+    height: 165px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 90px;
+    left: 55px;
+}
+
+.ic_pop_logo {
+    width: 150px;
+    height: 40px;
+    object-fit: contain;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.ic_pop_close {
+    width: 19px;
+    height: 20px;
+    object-fit: contain;
+    /* background-color: #ffffff; */
+    position: absolute;
+    top: 20px;
+    left: 230px;
+}
+
+.img_pop_2 {
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+    opacity: 1;
+    position: absolute;
+    top: 70px;
+    left: -20px;
+}
+
+.img_pop_1 {
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+    opacity: 1;
+    position: absolute;
+    top: 215px;
+    right: -20px;
+}
+
+.bottomBoxQR {
+    width: 90%;
+    height: 80px;
+    position: relative;
+    top: 298px;
+    left: 5%;
+    box-shadow: inset 0 1px 1px -1px #eeeeee;
+}
+
+.bottomBoxQR .topRectangle {
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    padding-left: 8px;
+}
+
+.bottomBoxQR .bottomRectangle {
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    padding-left: 2px;
+}
+
+.de5bb622c235a681b898929cecf7 {
+    /* width: 748px; */
+    height: 32px;
+    font-family: NanumSquareB;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.QR- {
+    /* width: 162px; */
+    height: 27px;
+    opacity: 0.8;
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#modalBox {
+    width: 90px;
+    height: 90px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 23%;
+    left: 72%;
+}
+
+#modalClose {
+    width: 19px;
+    height: 20px;
+    object-fit: contain;
+    /* background-color: #ffffff; */
+    position: absolute;
+    top: 20px;
+    left: 230px;
+}
+
+#modalQR {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.9;
+    left: 0%;
+    display: none;
+}
+
+#mOnly {
+    display: none;
+}
+
+#dOnly {
+    display: block;
+}
+
+#qrcodeMobS {
+    display: none;
+}
+
+#qrcodeMobM {
+    display: none;
+}
+
+#qrcodeMobL {
+    display: none;
+}
+
+#qrcodeTabM {
+    display: none;
+}
+
+#qrcodeTabL {
+    display: none;
+}
+
+#qrcodeDesktop {
+    display: block;
+}
+#qrcode4K {
+    display: none;
+}
+
+#qrcodeMobPm {
+    display: none;
+}
+
+#qrcodeMobPl {
+    display: none;
+}
+
+#qrcodeTabPm {
+    display: none;
+}
+
+#qrcodeTabPl {
+    display: none;
+}
+
+#qrcodeTabPlm {
+    display: none;
+}
+
+
+/*  End of Modal */
+
+
+/* Upper Rectangle */
+
+.Rectangle-tableTop {
+    width: 80%;
+    height: 350px;
+    position: relative;
+    left: 10%;
+    /* background-color: burlywood; */
+}
+
+.mobTab {
+    display: none;
+}
+
+.Rectangle-tableTop .Rectangle-heading {
+    width: 45%;
+    height: 10%;
+    /* background-color: cornsilk; */
+    position: absolute;
+    padding: 5px;
+    padding-top: 40px;
+    font-family: NanumSquareB;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #061638;
+}
+
+.Rectangle-tableTop .Rectangle-heading.h2 {
+    left: 52%;
+}
+
+.Rectangle-7 {
+    width: 45%;
+    height: 15%;
+    box-shadow: inset 0px -1px 0 0 #eeeeee;
+    background-color: #ffffff;
+    position: absolute;
+    /* background-color: crimson; */
+    padding-top: 13px;
+}
+
+.Rectangle-7-copy {
+    width: 22.5%;
+    height: 15%;
+    box-shadow: inset 0px -1px 0 0 #eeeeee;
+    background-color: #ffffff;
+    position: absolute;
+    /* background-color: hotpink; */
+    padding-top: 13px;
+}
+
+.innerRectangle {
+    width: 98%;
+    height: 60%;
+    /* box-shadow: inset -1px 0px 1px -1px #eeeeee; */
+    border-right: 1px solid #eeeeee;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    /* background-color: blueviolet; */
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.Rectangle-7.one {
+    top: 20%;
+}
+
+.Rectangle-7.two {
+    top: 20%;
+    left: 52%;
+}
+
+.Rectangle-7.three {
+    top: 35%;
+}
+
+.Rectangle-7.four {
+    width: 22.5%;
+    left: 52%;
+    top: 35%;
+}
+
+.Rectangle-7-copy.five {
+    left: 74.5%;
+    top: 35%;
+}
+
+.Rectangle-7.six {
+    top: 50%;
+}
+
+.Rectangle-7.seven {
+    width: 22.5%;
+    top: 50%;
+    left: 52%;
+}
+
+.Rectangle-7-copy.eight {
+    left: 74.5%;
+    top: 50%;
+}
+
+.Rectangle-7.nine {
+    top: 65%;
+}
+
+.Rectangle-7.ten {
+    width: 22.5%;
+    top: 65%;
+    left: 52%;
+}
+
+.Rectangle-7-copy.eleven {
+    left: 74.5%;
+    top: 65%;
+}
+
+.Rectangle-7 .\- {
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+.tempText {
+    /* width: 43px;
+    height: 14px; */
+    font-family: NanumSquareB;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    float: right;
+    color: #6725ff;
+    padding-top: 2px;
+}
+
+.tempText.style2 {
+    color: #333333;
+}
+
+.-TX {
+    width: 65px;
+    height: 14px;
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+.-TX.style2 {
+    color: #333333;
+}
+
+.-TX.padText {
+    padding-left: 12px;
+}
+
+.ic_question {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.-LIB.ft {
+    width: 300px;
+    height: 17px;
+    font-family: NanumSquareB;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    float: right;
+    color: #333333;
+    position: relative;
+    /* top: 60%; */
+    transform: translateY(-2vh);
+}
+
+.-LIB .text-style-1 {
+    font-family: NanumSquareR;
+    font-size: 15px;
+    color: #999999;
+}
+
+
+/*  Previous CSS */
+
+
+/* White Box for heaidngs and buttons */
+
+.whiteBoxTop {
+    width: 80%;
+    height: 100px;
+    position: relative;
+    left: 10%;
+    background-color: #ffffff;
+}
+
+.-\35 24 {
+    height: 20%;
+    font-family: NanumSquareB;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #061638;
+    position: absolute;
+    top: 55%;
+    display: inline-block;
+}
+
+
+/* Buttons */
+
+.btn.Rectangle-10{
+    width: 7.5vw;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    overflow: hidden;
+    /* padding: 0.2%; */
+    padding-top: 13px;
+}
+
+.Rectangle-10 span{
+    display: inline-block;
+}
+
+.btnText{
+    height: 14px;
+    font-family: NanumSquareR;
+    font-size: 1.05vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    float: left;
+    color: #000000;
+    /* overflow: hidden; */
+}
+
+.Rectangle-10 .btnText {
+    transform: translate(-10%, -30%);
+}
+
+.ic_select {
+    position: absolute;
+    float: right;
+    width: 11%;
+    height: 24px;
+    object-fit: contain;
+    background-color: #ffffff;
+    transform: translateY(-100%);
+    /* overflow: hidden; */
+}
+
+.Shape-1-2,
+.Shape-1-2-copy {
+    transform: translateY(-3px);
+}
+
+
+.Rectangle-10.right{
+    left: 64.5%;
+}
+
+
+.Rectangle-10.right .btnSecondText{
+    height: 14px;
+    font-family: NanumSquareR;
+    font-size: 1.05vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    float: left;
+    color: #000000;
+    transform: translate(-10%, -30%);
+}
+
+
+/* Directional Buttons */
+
+.Shape-1-2 {
+    width: 100%;
+    height: 100%;
+    color: #999999;
+    object-position: center;
+    object-fit: contain;
+}
+
+.Shape-1-2-copy {
+    width: 100%;
+    height: 100%;
+    color: #999999;
+}
+
+.Rectangle-11-copy-2.infoBoxText {
+    font-family: NanumSquareR;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    padding: 1%
+}
+
+
+/* Table Box */
+
+.Rectangle-7.Rectangle-11 {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    height: 80px;
+    box-shadow: inset 0px -1px 0 0 #eeeeee;
+    background-color: #ffffff;
+}
+
+.padText {
+    transform: translateY(-20%);
+}
+
+.box {
+    height: 50%;
+    position: absolute;
+    top: 30%;
+}
+
+.box.number {
+    width: 3%;
+    height: 90%;
+    font-family: NanumSquareR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    padding-top: 10px;
+    /* background-color: #777777; */
+}
+
+.box.one {
+    width: 15%;
+    left: 3%;
+    /* background-color: #999999; */
+}
+
+.box.two {
+    width: 10.5%;
+    left: 17%;
+    /* background-color: antiquewhite; */
+}
+
+.box.three {
+    width: 11.5%;
+    left: 28.5%;
+    /* background-color: beige; */
+}
+
+.box.four {
+    width: 22.5%;
+    left: 40%;
+    /* background-color: burlywood; */
+}
+
+.box.five {
+    width: 22.5%;
+    left: 62.5%;
+    /* background-color: coral; */
+}
+
+.box.six {
+    width: 8%;
+    left: 85%;
+    /* background-color: cornsilk; */
+}
+
+.box.seven {
+    width: 7%;
+    left: 93%;
+    /* background-color: darkkhaki; */
+}
+
+.TX-ID {
+    font-family: NanumSquareR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+.bodyText {
+    font-family: NanumSquareB;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.bodyText.style-1 {
+    color: #6725ff;
+}
+
+.box.two .\- {
+    height: 14px;
+    font-family: NanumSquareB;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    padding-top: 2%;
+}
+
+.p2p {
+    height: 15px;
+    font-family: NanumSquareB;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    padding-top: 2%;
+}
+
+.f8c5259d3c787e7a {
+    height: 12px;
+    font-family: NanumSquareB;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    padding-top: 2%;
+    color: #6725ff;
+}
+
+.b5e88-0af5c3e5 {
+    height: 12px;
+    font-family: NanumSquareB;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    padding-top: 2%;
+    color: #6725ff;
+}
+
+.-LIB {
+    height: 12px;
+    font-family: NanumSquareB;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    padding-top: 3%;
+    color: #333333;
+}
+
+.ic_error {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    transform: translate(-70%, -10%);
+}
+
+
+/* Bottom Box and Directional Buttons */
+
+.bottomWhiteBox {
+    width: 80%;
+    height: 130px;
+    position: relative;
+    left: 10%;
+    background-color: #ffffff;
+}
+
+.Rectangle-12 {
+    position: absolute;
+    width: 12%;
+    top: 40%;
+    left: 44%;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    font-family: NanumSquareR;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #6725ff;
+}
+
+.Rectangle-11 {
+    width: 4%;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #f3f4f5;
+    position: absolute;
+    left: 75.5%;
+}
+
+.Rectangle-11.top {
+    top: 50%;
+}
+
+.Rectangle-11.bottom {
+    top: 40%
+}
+
+.Rectangle-11-copy-2 {
+    width: 8%;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    left: 80.2%;
+}
+
+.Rectangle-11-copy-2.top {
+    top: 50%;
+}
+
+.Rectangle-11-copy-2.bottom {
+    top: 40%;
+}
+
+.Rectangle-11-copy {
+    width: 4%;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #f3f4f5;
+    position: absolute;
+    left: 89%;
+}
+
+.Rectangle-11-copy.top {
+    top: 50%;
+}
+
+.Rectangle-11-copy.bottom {
+    top: 40%;
+}
+
+.infoNumBox {
+    height: 15px;
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #777777;
+    position: absolute;
+    left: 93.6%;
+}
+
+.infoNumBox.top {
+    top: 62%;
+}
+
+.infoNumBox.bottom {
+    top: 52%;
+}
+
+
+/* Bottom Area for Social Media Links */
+
+.Rectangle-8 {
+    width: 100%;
+    height: 180px;
+    box-shadow: inset 0px 1px 0 0 #eeeeee;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.Ellipse-2 {
+    width: 60px;
+    height: 60px;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30%;
+    border-radius: 50%;
+}
+
+.Ellipse-2.fb {
+    left: 42%;
+}
+
+.Ellipse-2.twitter {
+    left: 48%;
+}
+
+.Ellipse-2.email {
+    left: 54%;
+}
+
+
+/* Social Media Buttons Images */
+
+.ic_email {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+.ic_twitter {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+.ic_facebook {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+
+/* Copyright Text */
+
+.-\32 020-LibExplorer- {
+    height: 16px;
+    font-family: NanumSquareR;
+    font-size: 1.15vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    position: absolute;
+    top: 75%;
+    left: 42%;
+}
+
+
+/*  Media Queries */
+
+@media screen and (min-width: 994px) and (max-width: 1100px)
+{
+    .Rectangle-tableTop, .whiteBoxTop, 
+    .Rectangle-7.Rectangle-11, .bottomWhiteBox {
+        width: 85%;
+        left: 7.5%;
+    }
+    .-\35 24 {
+        top: 55%;
+    }
+    .btnText, .Rectangle-10.right .btnSecondText {
+        padding-top: 2px;
+        font-size: 1.05vw;
+    }
+    .ic_select {
+        left: 65px;
+    }
+    .Shape-1-2, .Shape-1-2-copy {
+        transform: translateY(-2px);
+    }
+    .Rectangle-11-copy-2.infoBoxText {
+        font-size: 15px;
+    }
+    .box.seven {
+        width: 8%;
+    }
+    .-LIB.ft {
+        transform: translateY(-1.5vh);
+    }
+    .Ellipse-2.fb {
+        left: 41%;
+    }
+    
+    .Ellipse-2.twitter {
+        left: 48%;
+    }
+    
+    .Ellipse-2.email {
+        left: 55%;
+    }
+    .-\32 020-LibExplorer- {
+        left: 41%;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+    .ic_address_copy.two {
+        left: 76%;
+        top: 50%;
+    }
+    .ic_address_copy.three {
+        left: 80%;
+        top: 50%;
+    }
+}
+
+
+/* Larger Laptop screens */
+
+@media screen and (min-width: 1400px) {
+    .Rectangle-topLeft .\- {
+        font-size: 1em;
+    }
+    .btnText, .Rectangle-10.right .btnSecondText {
+        font-size: 15px;
+    }
+    .Rectangle-bottomLeft .de5bb622c235a681b898929cecf7 {
+        font-size: 28px;
+    }
+    .ic_pop_copy {
+        top: 35%;
+    }
+}
+
+
+@media screen and (min-width: 1921px)
+{
+        /*  Header background */
+    .mainscreenn{
+        max-width: 1920px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .Rectangle-1{
+         max-width: 1920px;
+    }
+
+}
+   
+
+
+/* Mobile Phone and Tablet */
+
+@media screen and (min-width: 0px) and (max-width:993px) {
+    /* Generic Mobile Design */
+    #qrcodeMobS {
+        display: none;
+    }
+    #qrcodeMobM {
+        display: none;
+    }
+    #qrcodeMobL {
+        display: none;
+    }
+    #qrcodeTabM {
+        display: block;
+    }
+    #qrcodeTabL {
+        display: none;
+    }
+    #qrcodeDesktop {
+        display: none;
+        position: relative;
+        z-index: 1;
+    }
+    #qrcodeMobPm {
+        display: none;
+    }
+    #qrcodeMobPl {
+        display: none;
+    }
+    #qrcodeTabPm {
+        display: block;
+    }
+    #qrcodeTabPl {
+        display: none;
+    }
+    /* Bg Header */
+    .img_visual_2m {
+        display: block;
+    }
+    .img_visual_2 {
+        display: none;
+    }
+    .Rectangle-599 {
+        width: 220px;
+        height: 50px;
+        left: 35%;
+        top: 7%;
+    }
+    .ic_pop_copy {
+        width: 22px;
+        height: 14px;
+        top: 35%;
+    }
+    .Rectangle-599 .\- {
+        font-size: 1em;
+        top: 30%;
+        left: 25%
+    }
+    .Rectangle-topLeft {
+        width: 120px;
+        height: 30px;
+        font-size: 1.7em;
+        top: 9%;
+        left: 5%;
+    }
+    .Rectangle-bottomLeft {
+        width: 90%;
+        left: 5%;
+        top: 22%;
+    }
+    .Rectangle-bottomLeft .de5bb622c235a681b898929cecf7 {
+        font-size: 1.7em;
+    }
+    .Ellipse-5 {
+        width: 50px;
+        height: 50px;
+        float: right;
+        top: -10px;
+    }
+    .ic_address_copy {
+        width: 22px;
+        height: 24px;
+        left: 25%;
+        top: 25%;
+    }
+    .Rectangle-15 {
+        width: 200px;
+        height: 200px;
+        left: 35%;
+        top: 45%;
+    }
+    #modalBox {
+        width: 200px;
+        height: 200px;
+        left: 35%;
+        top: 45%;
+    }
+    #dOnly {
+        display: none;
+    }
+    #mOnly {
+        display: block;
+    }
+    /* Modal Box Setting for Tablets */
+    .Rectangle-16 {
+        width: 600px;
+        height: 600px;
+        left: 15%;
+    }
+    .Rectangle-15-copy {
+        width: 300px;
+        height: 300px;
+        top: 17.5%;
+        left: 25%;
+    }
+    .ic_pop_logo {
+        width: 350px;
+        height: 60px;
+    }
+    #modalClose {
+        width: 40px;
+        height: 40px;
+        left: 87%;
+        top: 3.5%;
+    }
+    .img_pop_2 {
+        width: 150px;
+        height: 200px;
+        top: 15%;
+        left: -5%;
+    }
+    .img_pop_1 {
+        width: 150px;
+        height: 200px;
+        top: 55%;
+        right: -5%;
+    }
+    .bottomBoxQR {
+        top: 75%;
+        height: 120px;
+    }
+    .de5bb622c235a681b898929cecf7 {
+        font-size: 26px;
+    }
+    .QR- {
+        font-size: 24px;
+        padding-left: 30px;
+    }
+    .Ellipse-6 {
+        width: 55px;
+        height: 55px;
+        top: 65%;
+        left: 65%;
+        opacity: 0.5;
+        position: absolute;
+        z-index: 2;
+    }
+    .ic_qr_zoom {
+        width: 20px;
+        height: 20px;
+        left: 30%;
+        top: 30%;
+    }
+    /* Top Table */
+    .dT {
+        display: none;
+    }
+    .mobTab {
+        display: block;
+    }
+    .Rectangle-tableTop {
+        width: 100%;
+        left: 0%;
+        height: 800px;
+    }
+    .Rectangle-tableTop .Rectangle-heading {
+        width: 100%;
+        height: 12%;
+        padding-top: 50px;
+    }
+    .Rectangle-7 {
+        width: 100%;
+        height: 9.5%;
+        padding-top: 30px;
+    }
+    .Rectangle-7-copy {
+        width: 50%;
+        height: 9.5%;
+        padding-top: 30px;
+    }
+    .Rectangle-7.one {
+        top: 12%;
+    }
+    .Rectangle-7.three {
+        top: 21.5%;
+    }
+    .Rectangle-7.six {
+        top: 31%
+    }
+    .Rectangle-7.nine {
+        top: 40.5%;
+    }
+    .Rectangle-tableTop .Rectangle-heading.h2 {
+        left: 0%;
+        top: 50%;
+    }
+    .Rectangle-7.two {
+        left: 0%;
+        top: 62%;
+    }
+    .Rectangle-7.four {
+        left: 0%;
+        top: 71.5%;
+        width: 50%;
+    }
+    .Rectangle-7-copy.five {
+        left: 50%;
+        top: 71.5%;
+    }
+    .Rectangle-7.seven {
+        left: 0%;
+        top: 81%;
+        width: 50%;
+    }
+    .Rectangle-7-copy.eight {
+        left: 50%;
+        top: 81%;
+    }
+    .Rectangle-7.ten {
+        left: 0%;
+        top: 90.5%;
+        width: 50%;
+    }
+    .Rectangle-7-copy.eleven {
+        left: 50%;
+        top: 90.5%;
+    }
+    .Rectangle-tableTop .Rectangle-heading {
+        padding-left: 20px;
+        font-size: 25px;
+    }
+    .Rectangle-7 .\-,
+    .-TX,
+    .-LIB .text-style-1,
+    .tempText {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+    .innerRectangle {
+        padding-top: 15px;
+    }
+    .tempText,
+    .-LIB.ft {
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    #libPad {
+        width: 400px;
+        height: 60px;
+        transform: translateY(-40%);
+    }
+    /* Previous Code CSS */
+    .whiteBoxTop {
+        height: 130px;
+        width: 90%;
+        left: 5%;
+    }
+    .Rectangle-11.top {
+        display: none;
+    }
+    .Rectangle-11-copy-2.top {
+        display: none;
+    }
+    .Rectangle-11-copy.top {
+        display: none;
+    }
+    .infoNumBox.top {
+        display: none;
+    }
+    .-\35 24 {
+        /* height: 70%; */
+        width: 45%;
+        top: 45%;
+        text-align: left;
+        font-size: 2.5vw;
+        /* border: solid 1px red; */
+    }
+    .btn.Rectangle-10 {
+        width: 25%;
+        height: 50px;
+        top: 35%;
+        left: 45%;
+        padding: 0%;
+    }
+    .Rectangle-10.right {
+        width: 25%;
+        height: 50px;
+        top: 35%;
+        left: 75%;
+    }
+    .Rectangle-10.right .btnSecondText {
+        height: 10px;
+        font-family: NanumSquareR;
+        font-size: 21px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        /* padding-top: 14%; */
+        padding-left: 20px;
+    }
+    .btnText {
+        height: 10px;
+        font-family: NanumSquareR;
+        font-size: 21px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        /* padding-top: 14%; */
+        padding-left: 20px;
+    }
+    .ic_select {
+        width: 28px;
+        height: 25px;
+        left: 80%;
+        top: 80%;
+    }
+    .fa.fa-angle-left.fa-2x,
+    .fa.fa-angle-right.fa-2x {
+        transform: translateY(2px);
+    }
+    /*  Bottom Table Adjustments */
+    .Rectangle-7.Rectangle-11 {
+        width: 100%;
+        left: 0%;
+        height: 425px;
+        border-top: 2px solid #eeeeee;
+        border-right: 2px solid #eeeeee;
+        border-left: 2px solid #eeeeee;
+        padding: 2%;
+        position: relative;
+        margin-bottom: 4%;
+    }
+    .box {
+        height: 25%;
+    }
+    .outerRec {
+        width: 96%;
+        height: 25%;
+        box-shadow: inset 0px -2px 0 0 #eeeeee;
+        position: relative;
+    }
+    .outerRec.one {
+        position: absolute;
+        top: 25%;
+    }
+    .outerRec.two {
+        position: absolute;
+        top: 50%;
+    }
+    .outerRec.three {
+        position: absolute;
+        top: 75%;
+    }
+    .box.number {
+        top: 0%;
+        width: 10%;
+        height: 25%;
+        box-shadow: inset 0px -2px 0 0 #eeeeee;
+        padding-left: 28px;
+        padding-top: 40px;
+        font-size: 1.5em;
+    }
+    .box.one {
+        width: 88%;
+        top: 0%;
+        left: 10%;
+        box-shadow: inset 0px -2px 0 0 #eeeeee;
+    }
+    .box.two,
+    .box.four,
+    .box.six {
+        width: 48%;
+        height: 70%;
+        top: 15%;
+        left: 2%;
+        border-right: 2px solid #eeeeee;
+    }
+    .box.three,
+    .box.five,
+    .box.seven {
+        width: 48%;
+        height: 70%;
+        left: 50%;
+        top: 15%;
+    }
+    .padText {
+        padding-top: 6px;
+    }
+    #padTopRow {
+        padding-top: 26px;
+    }
+    .bodyText {
+        padding-left: 5%;
+        /* font-size: 30px; */
+        font-size: 3.1vw;
+    }
+    .TX-ID {
+        padding-top: 15px;
+        padding-left: 5%;
+        /* font-size: 24px; */
+        font-size: 2.4vw;
+    }
+    .box.two .\- {
+        padding-left: 15px;
+        font-size: 3.1vw;
+    }
+    .p2p {
+        padding-left: 15px;
+        font-size: 3.1vw;
+    }
+    .f8c5259d3c787e7a {
+        padding-left: 5%;
+        font-size: 3.1vw;
+    }
+    .b5e88-0af5c3e5 {
+        padding-left: 5%;
+        font-size: 3.1vw;
+    }
+    .-LIB {
+        padding-left: 5%;
+        font-size: 3.1vw;
+    }
+    .tableView {
+        display: none;
+    }
+    .ic_error {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        position: absolute;
+        transform: translate(0%, -100%);
+    }
+    .ic_address_copy.two {
+        left: 90%;
+        top: 60%;
+    }
+    .ic_address_copy.three {
+        left: 93%;
+        top: 60%;
+    }
+    /* Bottom White Box */
+    .bottomWhiteBox {
+        width: 100%;
+        height: 240px;
+        position: relative;
+        left: 0%;
+        background-color: #ffffff;
+    }
+    .Rectangle-12 {
+        position: absolute;
+        width: 25%;
+        height: 30%;
+        top: 25%;
+        left: 10%;
+        font-family: NanumSquareR;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #6725ff;
+    }
+    .Rectangle-11 {
+        width: 10%;
+        height: 30%;
+    }
+    .Rectangle-11.bottom {
+        top: 25%;
+        left: 45%;
+    }
+    .Rectangle-11-copy-2 {
+        width: 20%;
+        height: 30%;
+    }
+    .Rectangle-11-copy-2.bottom {
+        top: 25%;
+        left: 57%;
+    }
+    .Rectangle-11-copy {
+        width: 10%;
+        height: 30%;
+    }
+    .Rectangle-11-copy.bottom {
+        top: 25%;
+        left: 78.5%;
+    }
+    .Shape-1-2 {
+        font-size: 6.5vw;
+    }
+    .Shape-1-2-copy {
+        font-size: 6.5vw;
+    }
+    /* Info Box and Number Info Box */
+    .Rectangle-11-copy-2.infoBoxText {
+        padding: 2.5%;
+        font-size: 3.5vw;
+    }
+    .infoNumBox {
+        position: absolute;
+        left: 90%;
+        font-size: 3vw;
+        transform: translateY(-300%);
+    }
+    /*  Social Media */
+    .Rectangle-8 {
+        height: 320px;
+    }
+    .Ellipse-2 {
+        width: 100px;
+        height: 100px;
+        top: 20%;
+    }
+    .Ellipse-2.fb {
+        left: 22%;
+    }
+    .Ellipse-2.twitter {
+        left: 42%;
+    }
+    .Ellipse-2.email {
+        left: 62%;
+    }
+    .ic_email {
+        width: 60px;
+        height: 56px;
+    }
+    .ic_twitter {
+        width: 60px;
+        height: 56px;
+    }
+    .ic_facebook {
+        width: 60px;
+        height: 56px;
+    }
+    .-\32 020-LibExplorer- {
+        font-size: 3.75vw;
+        left: 22%;
+        top: 60%;
+    }
+
+    /* Small Phones Landscape */
+    @media screen and (min-width: 501px) and (max-width: 570px){
+        .btn.Rectangle-10, 
+        .Rectangle-10.right {
+            height: 40px;
+        }
+        .Rectangle-10.right .btnSecondText,
+        .btnText  {
+            font-size: 19px;
+        }
+        .ic_select {
+            width: 22px;
+            height: 20px;
+            top: 70%;
+        }
+        .-\35 24 {
+            font-size: 15px;
+            top: 42%;
+        }
+        .Rectangle-12,
+        .Rectangle-11,
+        .Rectangle-11-copy-2,
+        .Rectangle-11-copy  {
+            height: 22%;
+        }
+        .Rectangle-12 {
+            font-size: 26px;
+        }
+        .fa.fa-angle-right.fa-2x,
+        .fa.fa-angle-left.fa-2x {
+
+        }
+    }
+
+    /*  Specialized media query for mobile phones */
+    @media screen and (max-width: 450px) {
+        #qrcodeMobS {
+            display: none;
+        }
+        #qrcodeMobM {
+            display: block;
+        }
+        #qrcodeMobL {
+            display: none;
+        }
+        #qrcodeTabM {
+            display: none;
+        }
+        #qrcodeTabL {
+            display: none;
+        }
+        #qrcodeDesktop {
+            display: none;
+            position: relative;
+            z-index: 1;
+        }
+        #qrcodeMobPm {
+            display: block;
+        }
+        #qrcodeMobPl {
+            display: none;
+        }
+        #qrcodeTabPm {
+            display: none;
+        }
+        #qrcodeTabPl {
+            display: none;
+        }
+        .Rectangle-599 {
+            width: 130px;
+            height: 30px;
+        }
+        .ic_pop_copy {
+            width: 14px;
+            height: 14px;
+            top: 27%;
+        }
+        .Rectangle-599 .\- {
+            font-size: 0.6em;
+            left: 26%;
+        }
+        .Rectangle-topLeft {
+            width: 100px;
+            height: 20px;
+            top: 4%;
+            left: 4%;
+            font-size: 1.4em;
+        }
+        .Rectangle-bottomLeft {
+            left: 5%;
+            top: 25%;
+        }
+        .Rectangle-bottomLeft .de5bb622c235a681b898929cecf7 {
+            font-size: 0.8em;
+        }
+        .Ellipse-5 {
+            width: 30px;
+            height: 30px;
+            top: -5px;
+        }
+        .ic_address_copy {
+            width: 16px;
+            height: 18px;
+            left: 25%;
+            top: 18%;
+        }
+        /*  Modal Box */
+        .Rectangle-15 {
+            width: 100px;
+            height: 100px;
+        }
+        #modalBox {
+            width: 100px;
+            height: 100px;
+        }
+        .Rectangle-16 {
+            width: 300px;
+            height: 300px;
+            left: 10%;
+            top: 25%;
+        }
+        .Rectangle-15-copy {
+            width: 150px;
+            height: 150px;
+            top: 17.5%;
+            left: 25%;
+        }
+        .ic_pop_logo {
+            width: 180px;
+            height: 50px;
+            top: -1%;
+        }
+        #modalClose {
+            width: 20px;
+            height: 20px;
+            left: 87%;
+            top: 3.5%;
+        }
+        .img_pop_2 {
+            width: 100px;
+            height: 100px;
+            top: 15%;
+            left: -5%;
+        }
+        .img_pop_1 {
+            width: 100px;
+            height: 100px;
+            top: 55%;
+            right: -5%;
+        }
+        .bottomBoxQR {
+            top: 75%;
+            height: 80px;
+        }
+        .bottomBoxQR .topRectangle {
+            width: 60%;
+            padding-left: 0px;
+            left: 20%;
+            padding-left: 8px;
+        }
+        .bottomBoxQR .bottomRectangle {
+            padding-left: 0px;
+        }
+        .de5bb622c235a681b898929cecf7 {
+            font-size: 13.5px;
+        }
+        .QR- {
+            font-size: 14px;
+            /* padding-right: 10px; */
+        }
+        .Ellipse-6 {
+            width: 30px;
+            height: 30px;
+        }
+        .ic_qr_zoom {
+            width: 12px;
+            height: 12px;
+        }
+        /*  Top Table  */
+        .Rectangle-tableTop {
+            width: 98%;
+            left: 0%;
+            height: 500px;
+        }
+        .Rectangle-tableTop .Rectangle-heading {
+            padding-left: 20px;
+            padding-top: 40px;
+            font-size: 15px;
+        }
+        .Rectangle-7,
+        .Rectangle-7-copy {
+            padding-top: 10px;
+        }
+        .innerRectangle {
+            padding-left: 0px;
+            padding-top: 0px;
+        }
+        .Rectangle-7 .\-,
+        .-TX,
+        .-LIB .text-style-1 {
+            font-size: 12px;
+        }
+        .tempText,
+        .-LIB.ft {
+            font-size: 14px;
+            padding-top: 5px;
+        }
+        #libPad {
+            transform: translateY(-40%);
+        }
+        .ic_question {
+            width: 15px;
+            height: 15px;
+            left: 10px;
+        }
+        /*  White Box Top */
+        .whiteBoxTop {
+            height: 90px;
+        }
+        .-\35 24 {
+            font-size: 10px;
+            top: 50%;
+        }
+        .btn.Rectangle-10,
+        .Rectangle-10.right {
+            height: 30px;
+            padding-top: 5px;
+            top: 42%;
+        }
+        .Rectangle-10.right .btnSecondText,
+        .btnText {
+            font-size: 11px;
+            padding-top: 5px;
+            padding-left: 9px;
+        }
+        .ic_select {
+            width: 15px;
+            height: 15px;
+            left: 75%;
+            top: 21.5px;
+        }
+        .fa.fa-angle-left.fa-2x,
+        .fa.fa-angle-right.fa-2x {
+            transform: translateY(-4px);
+        }
+        /*  Table  */
+        .Rectangle-7.Rectangle-11 {
+            height: 250px;
+            left: 0%;
+            width: 100%;
+        }
+        .box.number {
+            font-size: 12px;
+            padding-left: 18px;
+            padding-top: 25px;
+        }
+        #padTopRow {
+            padding-top: 19px;
+        }
+        .bodyText,
+        .f8c5259d3c787e7a,
+        .TX-ID,
+        .b5e88-0af5c3e5,
+        .-LIB {
+            font-size: 12px;
+        }
+        .box.two .\-,
+        .p2p {
+            font-size: 12px;
+            padding-left: 5%;
+        }
+        .ic_error {
+            width: 15px;
+            height: 15px;
+        }
+        .ic_address_copy.two {
+            width: 12px;
+            height: 12px;
+            top: 60%;
+            left: 91%;
+        }
+        .ic_address_copy.three {
+            width: 12px;
+            height: 12px;
+            top: 60%;
+            left: 94%;
+        }
+        .TX-ID {
+            padding-top: 8px;
+        }
+        /*  Bottom Box */
+        .bottomWhiteBox {
+            height: 150px;
+        }
+        .Rectangle-12 {
+            height: 20%;
+            width: 30%;
+            top: 20%;
+            font-family: NanumSquareR;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #6725ff;
+        }
+        .Rectangle-11.bottom,
+        .Rectangle-11-copy.bottom,
+        .Rectangle-11-copy-2.bottom {
+            height: 20%;
+            top: 20%;
+        }
+        .Shape-1-2,
+        .Shape-1-2-copy {
+            font-size: 6vw;
+            transform: translateY(-20%);
+        }
+        .Rectangle-11-copy-2.infoBoxText {
+            font-size: 12px;
+            padding-top: 8px;
+        }
+        .infoNumBox {
+            transform: translateY(-260%);
+            font-size: 10px;
+        }
+        /*  Social Media */
+        .Rectangle-8 {
+            height: 170px;
+        }
+        .Ellipse-2 {
+            width: 50px;
+            height: 50px;
+            top: 20%;
+        }
+        .Ellipse-2.fb {
+            left: 22%;
+        }
+        .Ellipse-2.twitter {
+            left: 42%;
+        }
+        .Ellipse-2.email {
+            left: 62%;
+        }
+        .ic_email,
+        .ic_facebook {
+            width: 30px;
+            height: 30px;
+            transform: translateX(-2px);
+        }
+        .ic_twitter {
+            width: 30px;
+            height: 30px;
+            transform: translateX(-1px);
+        }
+        .-\32 020-LibExplorer- {
+            font-size: 13px;
+            left: 22%;
+            top: 58%;
+        }
+        /*  Smaller Phones */
+        @media screen and (max-width: 330px) {
+            #qrcodeMobS {
+                display: block;
+            }
+            #qrcodeMobM {
+                display: none;
+            }
+            #qrcodeMobL {
+                display: none;
+            }
+            #qrcodeTabM {
+                display: none;
+            }
+            #qrcodeTabL {
+                display: none;
+            }
+            #qrcodeDesktop {
+                display: none;
+                position: relative;
+                z-index: 1;
+            }
+            #qrcodeMobPm {
+                display: block;
+            }
+            #qrcodeMobPl {
+                display: none;
+            }
+            #qrcodeTabPm {
+                display: none;
+            }
+            #qrcodeTabPl {
+                display: none;
+            }
+            .Rectangle-599 {
+                width: 140px;
+                left: 30%;
+                top: 6%;
+            }
+            .ic_pop_copy {
+                width: 14px;
+                height: 14px;
+            }
+            .Rectangle-topLeft {
+                font-size: 1.15em;
+                left: 2%;
+            }
+            .Rectangle-bottomLeft {
+                left: 2%;
+            }
+            .Rectangle-bottomLeft .de5bb622c235a681b898929cecf7 {
+                font-size: 0.77em;
+            }
+            .Ellipse-5 {
+                width: 22px;
+                height: 22px;
+                top: 0px;
+                left: 10px;
+            }
+            .ic_address_copy {
+                width: 11px;
+                height: 13px;
+                /* left: 23%; */
+            }
+            .Rectangle-15 {
+                width: 85px;
+                height: 85px;
+            }
+            #modalBox {
+                width: 85px;
+                height: 85px;
+            }
+            .Rectangle-16 {
+                left: 3.5%;
+            }
+            .Ellipse-6 {
+                width: 25px;
+                height: 25px;
+                top: 70%;
+            }
+            .ic_qr_zoom {
+                top: 28%;
+            }
+            /* Table Top */
+            .Rectangle-tableTop .Rectangle-heading {
+                padding-left: 10px;
+            }
+            .Rectangle-7 .\-,
+            .-TX,
+            .-LIB .text-style-1,
+            .tempText {
+                padding-left: 10px;
+            }
+            /*  White Box Top */
+            .whiteBoxTop {
+                height: 80px;
+            }
+            .-\35 24 {
+                width: 52%;
+                font-size: 9.2px;
+                top: 46%;
+            }
+            .ic_select {
+                top: 8px;
+            }
+            .btn.Rectangle-10,
+            .Rectangle-10.right {
+                width: 22%;
+                top: 35%;
+                height: 30px;
+                transform: translateX(20px);
+                /* border: 1px solid red; */
+            }
+            .Rectangle-10.right .btnSecondText,
+            .btnText {
+                font-size: 8.9px;
+            }
+            .ic_select {
+                height: 13px;
+                top: 20px;
+            }
+            /*  Table Bottom */
+            .Rectangle-7.Rectangle-11 {
+                height: 230px;
+            }
+            .box.number {
+                padding-left: 12px;
+            }
+            .bodyText,
+            .f8c5259d3c787e7a,
+            .TX-ID,
+            .b5e88-0af5c3e5,
+            .-LIB,
+            .box.two .\-,
+            .p2p {
+                font-size: 9.7px;
+            }
+            #libPad {
+                transform: translateY(-40%);
+            }
+            .ic_address_copy.two,
+            .ic_address_copy.three {
+                top: 55%;
+                left: 88%;
+            }
+            .-\32 020-LibExplorer- {
+                font-size: 12px;
+            }
+        }
+        /*  For Larger Mobiles */
+        @media screen and (min-width: 400px) {
+            #qrcodeMobS {
+                display: none;
+            }
+            #qrcodeMobM {
+                display: none;
+            }
+            #qrcodeMobL {
+                display: block;
+            }
+            #qrcodeTabM {
+                display: none;
+            }
+            #qrcodeTabL {
+                display: none;
+            }
+            #qrcodeDesktop {
+                display: none;
+                position: relative;
+                z-index: 1;
+            }
+            #qrcodeMobPm {
+                display: none;
+            }
+            #qrcodeMobPl {
+                display: block;
+            }
+            #qrcodeTabPm {
+                display: none;
+            }
+            #qrcodeTabPl {
+                display: none;
+            }
+            .Rectangle-bottomLeft {
+                left: 4%;
+            }
+            .Rectangle-bottomLeft .de5bb622c235a681b898929cecf7 {
+                font-size: 0.85em;
+            }
+            .Rectangle-15 {
+                width: 115px;
+                height: 115px;
+            }
+            #modalBox {
+                width: 115px;
+                height: 115px;
+            }
+            .Rectangle-16 {
+                top: 25%;
+                height: 420px;
+                left: 15%;
+            }
+            .Rectangle-15-copy {
+                width: 170px;
+                height: 170px;
+                left: 22%;
+            }
+            #libPad {
+                transform: translateY(-38%);
+            }
+            .-\35 24 {
+                font-size: 11px;
+            }
+            .btn.Rectangle-10,
+            .Rectangle-10.right {
+                padding-top: 2px;
+            }
+            .TX-ID {
+                padding-top: 8px;
+            }
+            .ic_address_copy.two,
+            .ic_address_copy.three {
+                top: 60%;
+            }
+            .Rectangle-11-copy-2.infoBoxText {
+                padding-top: 8px;
+            }
+            .Rectangle-12,
+            .Rectangle-11.bottom,
+            .Rectangle-11-copy-2.bottom,
+            .Rectangle-11-copy.bottom {
+                height: 25%;
+            }
+            .Shape-1-2,
+            .Shape-1-2-copy {
+                font-size: 7vw;
+            }
+            .Rectangle-11-copy-2.infoBoxText {
+                font-size: 15px;
+            }
+            .infoNumBox {
+                font-size: 13px;
+            }
+            .-\32 020-LibExplorer- {
+                font-size: 14px;
+            }
+        }
+    }
+    @media screen and (min-width: 550px) and (max-width: 799px) {
+        #qrcodeMobS {
+            display: none;
+        }
+        #qrcodeMobM {
+            display: none;
+        }
+        #qrcodeMobL {
+            display: none;
+        }
+        #qrcodeTabM {
+            display: block;
+        }
+        #qrcodeTabL {
+            display: none;
+        }
+        #qrcodeDesktop {
+            display: none;
+            position: relative;
+            z-index: 1;
+        }
+        #qrcodeMobPm {
+            display: none;
+        }
+        #qrcodeMobPl {
+            display: none;
+        }
+        #qrcodeTabPm {
+            display: block;
+        }
+        #qrcodeTabPl {
+            display: none;
+        }
+        .Rectangle-16 {
+            left: 12%;
+        }
+        #modalQR {
+            overflow: auto;
+        }
+    }
+    @media screen and (min-width: 800px) {
+        #modalQR {
+            overflow: auto;
+        }
+    }
+    @media screen and (min-width: 900px) and (max-width:1200px) {
+        #qrcodeMobS {
+            display: none;
+        }
+        #qrcodeMobM {
+            display: none;
+        }
+        #qrcodeMobL {
+            display: none;
+        }
+        #qrcodeTabM {
+            display: none;
+        }
+        #qrcodeTabL {
+            display: block;
+        }
+        #qrcodeDesktop {
+            display: none;
+            position: relative;
+            z-index: 1;
+        }
+        #qrcodeMobPm {
+            display: none;
+        }
+        #qrcodeMobPl {
+            display: none;
+        }
+        #qrcodeTabPm {
+            display: none;
+        }
+        #qrcodeTabPl {
+            display: none;
+        }
+        #qrcodeTabPlm {
+            display: block;
+        }
+        /* Header Box */
+        .Rectangle-599 {
+            width: 220px;
+            left: 40%;
+        }
+        .Rectangle-599 .\- {
+            top: 30%;
+            left: 25%;
+        }
+        .Rectangle-topLeft {
+            left: 3%;
+        }
+        .Rectangle-topLeft .\- {
+            width: 150px;
+            font-size: 0.9em;
+            float: left;
+        }
+        .Rectangle-bottomLeft {
+            top: 20%;
+            left: 3%;
+        }
+        .Ellipse-5 {
+            width: 55px;
+            height: 55px;
+        }
+        .ic_address_copy {
+            width: 25px;
+            height: 25px;
+        }
+        .Rectangle-15 {
+            width: 230px;
+            height: 230px;
+            top: 45%;
+        }
+        #modalBox {
+            width: 230px;
+            height: 230px;
+            top: 45%;
+        }
+        #modalQR {
+            overflow: auto;
+        }
+        .Ellipse-6 {
+            top: 70%;
+            left: 70%;
+        }
+        .ic_qr_zoom {
+            width: 25px;
+            height: 25px;
+            top: 25%;
+            left: 25%;
+        }
+        /* Table Top */
+        .Rectangle-tableTop .Rectangle-heading {
+            padding-left: 15px;
+        }
+        #libPad {
+            width: 350px;
+        }
+        .-TX {
+            padding-left: 15px;
+        }
+        .ic_question {
+            width: 18px;
+            height: 18px;
+        }
+        /*  White Box Top */
+        .whiteBoxTop {
+            width: 100%;
+            left: 0%;
+        }
+        .-\35 24 {
+            top: 45%;
+        }
+        .Rectangle-10,
+        .Rectangle-10.right {
+            height: 60px;
+            top: 35%;
+        }
+        .Rectangle-10.right .btnSecondText,
+        .btnText {
+            font-size: 29px;
+            padding-top: 10px;
+        }
+        .ic_select {
+            left: 78%;
+            transform: translateY(5px);
+        }
+        /*  Table */
+        .Rectangle-7.Rectangle-11 {
+            width: 100%;
+            left: 0%;
+        }
+        .ic_address_copy.two,
+        .ic_address_copy.three {
+            top: 65%;
+        }
+        /*  Bottom Submit BUtton */
+        .Rectangle-12 {
+            font-size: 30px;
+        }
+        .Rectangle-11-copy-2.infoBoxText {
+            font-size: 30px;
+        }
+        /*  Social Media */
+        .Ellipse-2 {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+        }
+        .Ellipse-2.fb {
+            left: 26%;
+        }
+        .Ellipse-2.twitter {
+            left: 42%;
+        }
+        .Ellipse-2.email {
+            left: 58%;
+        }
+        .-\32 020-LibExplorer- {
+            font-size: 28px;
+            left: 26%;
+        }
+        @media screen and (min-width: 1000px) and (max-width: 1100px) {
+            #qrcodeMobS {
+                display: none;
+            }
+            #qrcodeMobM {
+                display: none;
+            }
+            #qrcodeMobL {
+                display: none;
+            }
+            #qrcodeTabM {
+                display: none;
+            }
+            #qrcodeTabL {
+                display: block;
+            }
+            #qrcodeDesktop {
+                display: none;
+                position: relative;
+                z-index: 1;
+            }
+            #qrcodeMobPm {
+                display: none;
+            }
+            #qrcodeMobPl {
+                display: none;
+            }
+            #qrcodeTabPm {
+                display: none;
+            }
+            #qrcodeTabPl {
+                display: block;
+            }
+            #qrcodeTabPlm {
+                display: none;
+            }
+            .Rectangle-16 {
+                width: 700px;
+                height: 700px;
+                left: 18%;
+                top: 27%;
+            }
+            .Rectangle-15-copy {
+                width: 350px;
+                height: 350px;
+                top: 17.5%;
+                left: 25%;
+            }
+            .QR- {
+                font-size: 28px;
+            }
+            .de5bb622c235a681b898929cecf7 {
+                font-size: 32px;
+            }
+        }
+    }
+}

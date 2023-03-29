@@ -1,0 +1,714 @@
+/* Adding Fonts */
+
+@font-face {
+    font-family: NanumSquareB;
+    src: url(fonts/NanumSquareB.ttf);
+}
+
+@font-face {
+    font-family: NanumSquareR;
+    src: url(fonts/NanumSquareR.ttf);
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+/* Main Heaidng Box */
+
+.Rectangle-5 {
+    width: 100%;
+    height: 240px;
+    background-color: #fafbfe;
+    position: relative;
+}
+
+
+/* Boxes within main Heading Box */
+
+.boxHead {
+    width: 20%;
+    height: 35%;
+    text-align: center;
+    padding: 1%;
+    position: absolute;
+}
+
+.boxHead.one {
+    top: 30%;
+    left: 18%;
+}
+
+.boxHead.two {
+    top: 30%;
+    left: 42%;
+}
+
+.boxHead.three {
+    top: 30%;
+    left: 66%;
+}
+
+
+/* Heading Text */
+
+.-\31 00- {
+    width: 148px;
+    height: 15px;
+    font-family: NanumSquareR;
+    font-size: 1.1vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #777777;
+    /* display: inline-block; */
+}
+
+.\- {
+    width: 90px;
+    height: 15px;
+    font-family: NanumSquareR;
+    font-size: 1.1vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #777777;
+    /* display: inline-block; */
+}
+
+.hText {
+    width: 225px;
+    height: 33px;
+    font-family: NanumSquareB;
+    /* font-size: 36px; */
+    font-size: 2.63vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #6725ff;
+}
+
+
+/* Top White Box */
+
+.topRectangle {
+    width: 80%;
+    height: 102px;
+    position: relative;
+    left: 10%;
+}
+
+.ic_top100 {
+    width: 59px;
+    height: 62px;
+    object-fit: contain;
+    position: absolute;
+    top: 30%;
+}
+
+.ic_top100m {
+    width: 118px;
+    height: 124px;
+    object-fit: contain;
+    display: none;
+}
+
+.topRectangle .-\31 00- {
+    width: 100%;
+    height: 20px;
+    font-family: NanumSquareB;
+    /* font-size: 20px; */
+    font-size: 1.45vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #061638;
+    position: absolute;
+    top: 50%;
+    left: 70px;
+}
+
+
+/* Table Box */
+
+.Rectangle-7 {
+    width: 85%;
+    height: 70px;
+    box-shadow: inset 0px -1px 0 0 #eeeeee;
+    background-color: #ffffff;
+    padding: 5px;
+    position: relative;
+    left: 10%;
+}
+
+.box {
+    position: absolute;
+    height: 60px;
+    padding-top: 16px;
+}
+
+.box.one {
+    width: 5%;
+    font-family: NanumSquareB;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.box.one .t1 {
+    font-size: 24px;
+    color: #f6ca15;
+}
+
+.box.one .t2 {
+    font-size: 24px;
+    color: #999999;
+}
+
+.box.one .t3 {
+    font-size: 24px;
+    color: #aa8e4b;
+}
+
+.box.one .t4_5 {
+    font-size: 18px;
+    color: #555555;
+}
+
+.box.one .t6-10 {
+    font-size: 18px;
+    color: #999999;
+}
+
+.box.two {
+    width: 50%;
+    left: 6%;
+}
+
+.box.three {
+    width: 22%;
+    left: 57%;
+}
+
+.box.four {
+    width: 19%;
+    left: 80%;
+}
+
+.box.two .b5e88a92c36d9161811890af5c3e5 {
+    /* width: 281px; */
+    height: 12px;
+    font-family: NanumSquareB;
+    font-size: 1.1vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6725ff;
+}
+
+.box.three .-LIB {
+    /* width: 156px; */
+    height: 14px;
+    font-family: NanumSquareB;
+    font-size: 1.1vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.-LIB .text-style-1 {
+    font-family: NanumSquareR;
+    color: #999999;
+}
+
+.box.four .\- {
+    /* width: 171px; */
+    height: 14px;
+    font-family: NanumSquareB;
+    font-size: 1.1vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+
+/* Submit Button Area */
+
+.container {
+    width: 80%;
+    height: 110px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.Rectangle-12 {
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    font-family: NanumSquareR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    position: absolute;
+    top: 30%;
+    left: 41%;
+}
+
+
+/* Social Media Box */
+
+.Rectangle-8 {
+    width: 100%;
+    height: 180px;
+    box-shadow: inset 0px 1px 0 0 #eeeeee;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.Ellipse-2 {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30%;
+    border-radius: 50%;
+}
+
+.Ellipse-2.fb {
+    left: 41%;
+}
+
+.Ellipse-2.twitter {
+    left: 46%;
+}
+
+.Ellipse-2.email {
+    left: 51%;
+}
+
+
+/* Social Media Buttons Images */
+
+.ic_email {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    opacity: 0.8;
+    transform: translate(0%, -2%);
+}
+
+.ic_twitter {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+.ic_facebook {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+
+/* Copyright Text */
+
+.-\32 020-LibExplorer- {
+    height: 16px;
+    font-family: NanumSquareR;
+    font-size: 0.95vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    position: absolute;
+    top: 70%;
+    left: 41%;
+}
+
+
+/*  Media Queries */
+
+
+
+
+/* For Large Screen */
+
+@media screen and (min-width: 1400px) {
+    .Rectangle-12 {
+        left: 42%;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+    .Rectangle-7 {
+        width: 79%;
+    }
+}
+
+@media screen and (min-width: 1921px)
+{
+        /*  Header background */
+    .mainscreenn{
+        max-width: 1920px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .Rectangle-1{
+         max-width: 1920px;
+    }
+
+}
+
+/*  For smaller Laptops */
+
+@media screen and (min-width: 993px) and (max-width: 1150px) {
+    .Rectangle-12 {
+        left: 43%;
+    }
+    .Ellipse-2 {
+        width: 45px;
+        height: 45px;
+    }
+    .Ellipse-2.fb {
+        left: 42%;
+    }
+    .Ellipse-2.twitter {
+        left: 48%;
+    }
+    .Ellipse-2.email {
+        left: 54%;
+    }
+    .-\32 020-LibExplorer- {
+        font-size: 1.2vw;
+        left: 42%;
+        top: 69%;
+    }
+}
+
+
+/* For Mobile phones and tablets */
+
+@media screen and (min-width: 0px) and (max-width: 999px) {
+    /* Generic Mobile and Tablet Design */
+    /* Main Heading Box */
+    .Rectangle-5 {
+        height: 500px;
+    }
+    .boxHead.one {
+        width: 80%;
+        height: 49%;
+        left: 10%;
+        top: 0%;
+        box-shadow: inset 0px -2px 0 0 #eeeeee;
+        padding-top: 75px;
+    }
+    .boxHead.two {
+        width: 40%;
+        left: 10%;
+        top: 50%;
+        height: 50%;
+        padding-top: 70px;
+    }
+    .boxHead.three {
+        width: 40%;
+        left: 55%;
+        top: 50%;
+        height: 50%;
+        padding-top: 70px;
+    }
+    .-\31 00- {
+        height: 29px;
+        /* font-size: 30px; */
+        font-size: 2.75vw;
+    }
+    .\- {
+        height: 29px;
+        /* font-size: 30px; */
+        font-size: 2.75vw;
+    }
+    .hText {
+        height: 64px;
+        /* font-size: 72px; */
+        font-size: 6vw;
+    }
+    /* Below Heading Box Rectangle */
+    .topRectangle {
+        width: 100%;
+        left: 0%;
+        height: 180px;
+    }
+    .ic_top100 {
+        display: none;
+    }
+    .ic_top100m {
+        display: inline-block;
+        position: absolute;
+        top: 15%;
+        left: 2%;
+    }
+    .topRectangle .-\31 00- {
+        /* width: 522px; */
+        height: 39px;
+        font-size: 40px;
+        font-size: 3.5vw;
+        left: 150px;
+        white-space: nowrap;
+        top: 45%;
+    }
+    /* Table Area*/
+    .Rectangle-7 {
+        width: 100%;
+        padding: 10px;
+        height: 150px;
+        left: 0%;
+        box-shadow: inset 0px -2px 0 0 #eeeeee;
+    }
+    .box.one {
+        width: 13%;
+        height: 140px;
+        /* font-size: 40px; */
+        padding-top: 45px;
+    }
+    .box.two {
+        width: 84%;
+        left: 15%;
+        box-shadow: inset 0px -2px 0 0 #eeeeee;
+    }
+    .box.three {
+        width: 40%;
+        top: 51%;
+        left: 15%;
+        border-right: solid 2px #eeeeee;
+    }
+    .box.four {
+        width: 40%;
+        top: 51%;
+        left: 59%;
+    }
+    .box.two .b5e88a92c36d9161811890af5c3e5 {
+        height: 25px;
+        font-size: 30px;
+        font-size: 3.1vw;
+    }
+    .box.three .-LIB {
+        height: 28px;
+        font-size: 30px;
+        font-size: 3.1vw;
+    }
+    .box.four .\- {
+        height: 28px;
+        font-size: 30px;
+        font-size: 3.1vw;
+    }
+    .box.one .t1 {
+        font-size: 3.5vw;
+    }
+    .box.one .t2 {
+        font-size: 3.5vw;
+    }
+    .box.one .t3 {
+        font-size: 3.5vw;
+    }
+    .box.one .t4_5 {
+        font-size: 3.5vw;
+    }
+    .box.one .t6-10 {
+        font-size: 3.5vw;
+    }
+    /*  Submit Button */
+    .container {
+        width: 100%;
+        height: 225px;
+    }
+    .Rectangle-12 {
+        border: solid 2px #dddddd;
+        border-radius: 6px;
+        width: 160px;
+        height: 55px;
+        /* font-size: 30px; */
+        font-size: 3.2vw;
+        left: 37.5%;
+        top: 20%;
+    }
+    /*  Social Media  */
+    .Rectangle-8 {
+        height: 275px;
+    }
+    .Ellipse-2 {
+        width: 80px;
+        height: 80px;
+        top: 25%;
+    }
+    .Ellipse-2.fb {
+        left: 30%;
+    }
+    .Ellipse-2.twitter {
+        left: 45%;
+    }
+    .Ellipse-2.email {
+        left: 60%;
+    }
+    .-\32 020-LibExplorer- {
+        font-size: 2.8vw;
+        left: 30%;
+        top: 62%;
+    }
+    /*  For smaller Tablets and small mobile landsacape */
+    @media screen and (min-width: 500px) and (max-width: 600px) {
+        .Rectangle-5 {
+            height: 470px;
+        }
+        .Rectangle-12 {
+            left: 35%;
+        }
+        .Ellipse-2.fb {
+            left: 25%;
+        }
+        .Ellipse-2.twitter {
+            left: 42%;
+        }
+        .Ellipse-2.email {
+            left: 59%;
+        }
+        .-\32 020-LibExplorer- {
+            left: 25%;
+            font-size: 3.2vw;
+        }
+    }
+    /* Mobile phones specific */
+    @media screen and (min-width: 0px) and (max-width: 499px) {
+        /* Main Heading */
+        .Rectangle-5 {
+            height: 300px;
+        }
+        .topRectangle {
+            height: 70px;
+        }
+        .boxHead.one,
+        .boxHead.two,
+        .boxHead.three {
+            padding-top: 50px;
+        }
+        /* Top Rectangle with top 100 icon */
+        .ic_top100m {
+            left: -5%;
+            height: 50px;
+        }
+        .topRectangle .-\31 00- {
+            left: 75px;
+        }
+        /*  Table */
+        .Rectangle-7 {
+            height: 100px;
+        }
+        .box.one {
+            height: 90px;
+            padding-top: 30px;
+        }
+        .box.two {
+            height: 40px;
+            padding-top: 3px;
+        }
+        .box.three,
+        .box.four {
+            height: 30px;
+            padding-top: 0px;
+            top: 60%;
+        }
+        .box.one .t1,
+        .box.one .t2,
+        .box.one .t3,
+        .box.one .t4_5,
+        .box.one .t6-10 {
+            font-size: 4vw;
+        }
+        /*  Submit Button */
+        .container {
+            height: 140px;
+        }
+        .Rectangle-12 {
+            width: 120px;
+            height: 40px;
+            left: 32%;
+        }
+        /*  Social Media */
+        .Rectangle-8 {
+            height: 170px;
+        }
+        .Ellipse-2 {
+            width: 50px;
+            height: 50px;
+        }
+        .Ellipse-2.fb {
+            left: 23%;
+        }
+        .Ellipse-2.twitter {
+            left: 43%;
+        }
+        .Ellipse-2.email {
+            left: 63%;
+        }
+        .-\32 020-LibExplorer- {
+            font-size: 3.6vw;
+            left: 23%;
+            top: 67%;
+        }
+        /* Smaller Mobile screen */
+        @media screen and (max-width: 330px) {
+            .Rectangle-5 {
+                height: 270px;
+            }
+            .boxHead.one,
+            .boxHead.two,
+            .boxHead.three {
+                padding-top: 45px;
+            }
+            .Rectangle-12 {
+                width: 100px;
+                height: 38px;
+                left: 33%;
+            }
+        }
+    }
+}

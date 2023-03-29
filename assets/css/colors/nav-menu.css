@@ -1,0 +1,838 @@
+.Rectangle-1 {
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    box-shadow: inset 0px -1px 0 0 #eeeeee;
+    background-color: #ffffff;
+}
+
+.navbarExpandPortion {
+    width: 50vw;
+}
+
+.Rectangle-3 {
+    width: 540px;
+    height: 50px;
+    border: solid 2px #6725ff;
+    background-color: #ffffff;
+    /* margin-left: 150px; */
+}
+
+.Rectangle-searchInput {
+    width: 80%;
+    height: 40px;
+    border: solid 2px #ffffff;
+    background-color: #ffffff;
+    /* margin-left: 150px; */
+}
+
+.search-btn {
+    display: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("../../img/ic-menu.png");
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: NanumSquareR;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: NanumSquareR;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-family: NanumSquareR;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #ffffff;
+    color: #6725ff;
+    padding-left: 0px;
+    margin-left: 0px;
+    /* margin-right: auto; */
+}
+
+.Rectangle-4 {
+    width: 50px;
+    height: 50px;
+    background-color: #6725ff;
+}
+
+.Rectangle-searchInputbtn {
+    width: 20%;
+    height: 49px;
+    margin-right: 0%;
+    float: right;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.ic_search {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-color: #6725ff;
+}
+
+.Rectangle-9 {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.ic_side_more {
+    width: 20px;
+    height: 34px;
+    object-fit: contain;
+    display: inline-block;
+    margin-right: 25px;
+    background-color: #ffffff;
+}
+
+.Rectangle-collapse-btns {
+    width: 100%;
+    height: 80px;
+    border-radius: 6px;
+    border-color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.Rectangle-collapse-searchBar {
+    width: 100%;
+    height: 60px;
+    border-radius: 0px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: inset 0px -3px 0 0 #6725ff;
+    background-color: #ffffff;
+    display: none;
+    margin-top: 7px;
+    z-index: 999;
+}
+
+.gnb_logo-copy {
+    width: 476px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.gnb_logo {
+    width: 350px;
+    height: 25px;
+    object-fit: contain;
+}
+
+
+/* .ic_search_m {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+} */
+
+.ic_search_m {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.custom-toggler {
+    width: 30px;
+    height: 30px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.gnb_list {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.6;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: auto;
+}
+
+.gnb_graph {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: auto;
+}
+
+.gnb_rank {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: auto;
+}
+
+.collapsed-navbar {
+    display: none;
+}
+
+.gnb_list_compressed {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.6;
+    display: inline;
+    margin-left: 20px;
+}
+
+.gnb_graph_compressed {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.6;
+    display: inline;
+    margin-left: 20px;
+}
+
+.gnb_rank_compressed {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.6;
+    display: inline;
+    margin-left: 20px;
+}
+
+.Rectangle-9:hover {
+    opacity: 1;
+    background-color: #f9f9f9;
+}
+
+.Rectangle-collapse-btns:hover {
+    /* width: 100%;
+    height: 80px;*/
+    border-radius: 6px;
+    box-shadow: inset -1px -1px 5px 1px #6725ff;
+}
+
+.nav-text1 {
+    width: 45px;
+    height: 11px;
+    font-family: NanumSquareR;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.33;
+    letter-spacing: normal;
+    text-align: center;
+    margin: auto;
+    color: #999999;
+    display: inline-block;
+}
+
+.nav-text2 {
+    width: 23px;
+    height: 11px;
+    font-family: NanumSquareR;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.33;
+    letter-spacing: normal;
+    text-align: center;
+    margin: auto;
+    color: #999999;
+}
+
+.nav-text3 {
+    width: 23px;
+    height: 11px;
+    font-family: NanumSquareR;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.33;
+    letter-spacing: normal;
+    text-align: center;
+    margin: auto;
+    color: #999999;
+}
+
+.nav-text1_compressed {
+    width: 65px;
+    height: 11px;
+    font-family: NanumSquareR;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.33;
+    letter-spacing: normal;
+    text-align: center;
+    margin-left: 10px;
+    color: #000000;
+    display: inline-block;
+}
+
+.nav-text2_compressed {
+    width: 50px;
+    /* float: left; */
+    height: 11px;
+    font-family: NanumSquareR;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.33;
+    letter-spacing: normal;
+    text-align: center;
+    margin-left: 10px;
+    color: #000000;
+    display: inline-block;
+}
+
+.nav-text3_compressed {
+    width: 50px;
+    height: 11px;
+    font-family: NanumSquareR;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.33;
+    letter-spacing: normal;
+    text-align: center;
+    margin-left: 10px;
+    color: #000000;
+    display: inline-block;
+}
+
+.Search-bar {
+    width: 100%;
+}
+
+
+/* @media only screen and (max-width : 768px) {
+.
+} */
+
+.collapsed-navbar {
+    display: none;
+}
+
+
+/* Navbar for larger screen desktop */
+
+
+/* ************ */
+
+
+/* .diff values are for 00main */
+
+@media screen and (min-width: 992px) {
+    .Rectangle-1 {
+        /* margin-left: 8%;
+        margin-top: 2%; */
+        width: 80%;
+        height: 100px;
+        box-shadow: inset 0px -1px 0 0 #eeeeee;
+        background-color: #ffffff;
+        /* position: relative; */
+        display: block;
+    }
+    .gnb_logo {
+/*        width: 19vw;*/
+        height: 100px;
+        /* margin-left: 0px; */
+        /* position: absolute; */
+        transform: translateX(-2vw);
+    }
+    .Rectangle-3 {
+        width: 32vw;
+/*        height: 7vh;*/
+        border: solid 2px #6725ff;
+        background-color: #ffffff;
+        margin-top: 0vw;
+        /* left: 0%; */
+        /* display: none; */
+    }
+ /*   .Rectangle-3.diff,*/
+ /*   .Rectangle-4.diff {
+        transform: translateX(-2vw);
+    }*/
+    .Rectangle-3.m01,
+    .Rectangle-4.m01 {
+        transform: translateX(-2vw);
+    }
+    /* .form-inline,
+    .nav-item {
+        width: 32vw;
+        height: 10vh;
+        left: 0%;
+    } */
+    .Rectangle-4 {
+        width: 50px;
+        /*height: 7vh;*/
+        background-color: #6725ff;
+        position: relative;
+        /* top: 100%; */
+        left: 0%;
+        /* transform: translateY(-0.5vh); */
+    }
+    .nav-item .Rectangle-9 {
+        width: 6vw;
+        height: 10vh;
+        /* margin-left: 0.5vw; */
+        margin-right: 5px;
+        margin-top: 3px;
+        border-radius: 6px;
+        background-color: #ffffff;
+        position: relative;
+        /* display: none; */
+    }
+    .gnb_list.diff,
+    .gnb_graph.diff,
+    .gnb_rank.diff {
+        width: 2.8vw;
+        height: 35px;
+        /* transform: translateX(1.8vw); */
+        margin-left: 1.8vw;
+        margin-top: -0.25vw;
+    }
+    .gnb_list,
+    .gnb_graph,
+    .gnb_rank {
+        width: 3vw;
+        height: 40px;
+        margin-top: -0.25vw;
+    }
+    /* .gnb_graph.m01 {
+        transform: translateX(1vw);
+    } */
+    .Rectangle-100 {
+        width: 5.5vw;
+        height: 3.5vh;
+        border-radius: 6px;
+        background-color: #ffffff;
+        object-fit: contain;
+        opacity: 0.6;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: auto;
+        position: absolute;
+        /* display: none; */
+    }
+    .nav-text1 {
+        transform: translate(-1.5vw, -1vw);
+        /* margin-left: 0vw; */
+    }
+    .nav-text2 {
+        transform: translate(-0.5vw, -1vw);
+    }
+    .nav-text3 {
+        transform: translate(-0.5vw, -1vw);
+    }
+    .nav-text1.diff {
+        /* left: 5.5vw; */
+        margin-left: 1.5vw;
+    }
+    .nav-text2.diff,
+    .nav-text3.diff {
+        /* transform: translateX(0.5vw) */
+        margin-left: 0.7vw;
+    }
+    .nav-text1,
+    .nav-text2,
+    .nav-text3 {
+        width: 6vw;
+        height: 11px;
+        font-family: NanumSquareR;
+        font-size: 0.9vw;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 4.33;
+        letter-spacing: normal;
+        text-align: center;
+        margin: auto;
+        color: #999999;
+        display: inline-block;
+        /* position: absolute; */
+        /* top: 6.5vh; */
+    }
+    .nav-text1.diff,
+    .nav-text2.diff,
+    .nav-text3.diff {
+        font-size: 0.8vw;
+        margin-top: 2.2vw;
+    }
+    .nav-text1.m01 {
+        /* transform: translateX(-5vw); */
+    }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1250px) {
+    .nav-text1.diff {
+        margin-left: 4vw;
+        margin-top: 1.4vw;
+        font-size: 0.8vw;
+    }
+    .nav-text2.diff,
+    .nav-text3.diff {
+        font-size: 0.8vw;
+        margin-top: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .Rectangle-1 {
+        height: 23vh;
+    }
+    .gnb_list.diff,
+    .gnb_graph.diff,
+    .gnb_rank.diff,
+    .gnb_list,
+    .gnb_graph,
+    .gnb_rank {
+        width: 3.5vw;
+        height: 2.5vw;
+        margin-top: -0.3vw;
+    }
+    .nav-text1,
+    .nav-text2,
+    .nav-text3 {
+        top: 6.7vh;
+    }
+    .nav-text1 {
+        font-size: 0.8vw;
+        margin-top: 0.2vw;
+        margin-left: 0.2vw;
+    }
+    .nav-text2,
+    .nav-text3 {
+        font-size: 0.8vw;
+        margin-top: 0.2vw;
+        /* margin-left: 0.2vw; */
+    }
+    .nav-text1.diff,
+    .nav-text2.diff,
+    .nav-text3.diff {
+        font-size: 0.8vw;
+        margin-top: 1.6vw;
+    }
+    .nav-text1.diff {
+        margin-left: 4.5vw;
+        margin-top: 1.4vw;
+    }
+    .nav-text2.diff,
+    .nav-text3.diff {
+        margin-top: 2.2vw;
+        margin-left: 1.2vw;
+    }
+    .nav-text1.m01 {
+        /* transform: translateX(-5vw); */
+    }
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1200px) {
+    .Rectangle-1 {
+        height: 14vh;
+    }
+    .Rectangle-3,
+    .form-inline,
+    /* .nav-item, */
+    .Rectangle-4,
+    .nav-item .Rectangle-9 {
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .Rectangle-1 {
+        height: 12vh;
+    }
+    .Rectangle-3,
+    .form-inline,
+    /* .nav-item, */
+    .Rectangle-4,
+    .nav-item .Rectangle-9 {
+        height: 5vh;
+    }
+    .gnb_list.diff,
+    .gnb_graph.diff,
+    .gnb_rank.diff,
+    .gnb_list,
+    .gnb_graph,
+    .gnb_rank {
+        height: 50px;
+        margin-top: -1vw;
+    }
+    .nav-text1.diff {
+        font-size: 0.9vw;
+        margin-top: 2.4vw;
+    }
+    .nav-text2.diff,
+    .nav-text3.diff {
+        font-size: 0.9vw;
+        margin-top: 4.4vw;
+    }
+    .nav-text1,
+    .nav-text2,
+    .nav-text3 {
+        /* top: 3.3vh; */
+        /* margin-bottom: 5vw; */
+        transform: translate(-8px, -2.2vw);
+        font-size: 1vw;
+    }
+}
+
+@media screen and (min-width: 1430px) and (max-width: 1599px) {
+    .Rectangle-1 {
+        padding-top: 2vh;
+        height: 17vh;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+    .Rectangle-1 {
+        padding-top: 2vh;
+        height: 17vh;
+    }
+    .Rectangle-3 {
+        width: 32vw;
+        margin-left: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+    .Rectangle-4 {
+        width: 4vw;
+        margin-bottom: 0.5vw;
+    }
+    .gnb_list.diff,
+    .gnb_graph.diff,
+    .gnb_rank.diff {
+        margin-top: 0vw;
+        width: 4vw;
+    }
+    .nav-text1,
+    .nav-text2,
+    .nav-text3 {
+        margin-left: 0vw;
+        margin-top: 1vw;
+    }
+    .nav-text1.diff {
+        margin-left: 2.2vw;
+    }
+    .nav-text2.diff {
+        margin-left: 1.2vw;
+    }
+}
+
+@media screen and (min-width: 1801px) and (max-width: 1920px) {
+    .Rectangle-1 {
+        /*padding-top: 2vh;*/
+        /*height: 16vh;*/
+        max-width: 1920px;
+        height: 100px;
+
+    }
+    .Rectangle-3 {
+/*        width: 32vw;*/
+        max-width: 1920px;
+        margin-left: 0.5vw;
+        margin-bottom: 0.5vw;
+
+        width: 520px;
+        height: 50px;
+    }
+    .Rectangle-4 {
+        max-width: 1920px;
+        height: 50px;
+          width: 50px;
+
+        /*width: 4vw;*/
+        margin-bottom: 0.5vw;
+    }
+    .gnb_list.diff,
+    .gnb_graph.diff,
+    .gnb_rank.diff {
+        max-width: 1920px;
+        margin-top: 0vw;
+        width: 5vw;
+        height: 2vw;
+    }
+    .nav-text1,
+    .nav-text2,
+    .nav-text3 {
+
+        margin-left: 0vw;
+        margin-top: 0.25vw;
+        font-size: 0.8vw;
+    }
+    .nav-text1.diff {
+        margin-left: 2.8vw;
+    }
+    .nav-text2.diff,
+    .nav-text3.diff {
+        margin-left: 1.8vw;
+    }
+}
+
+
+@media screen and (min-width: 1921px){
+    .navbar-expand-lg {
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    max-width: 1920px;
+    right: 100px;
+}
+}
+
+
+@media screen and (min-width: 994px) and (max-width: 1250px) {
+    .nav-text1.diff {
+        transform: translateX(-4vw);
+    }
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 992px) {
+    .Rectangle-1 {
+        width: 100%;
+        height: 15vh;
+    }
+    .search-btn {
+        display: block;
+    }
+    /* show it on smaller screen */
+    .collapsed-navbar {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .search-btn {
+        display: none;
+    }
+    /* hide it on larger screens */
+    .collapsed-navbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .gnb_logo {
+        /* width: 148px; */
+        /* margin: 2px; */
+        margin-left: 34px;
+        /* padding-left: 10px; */
+    }
+    .Rectangle-searchInputbtn {
+        width: 11%;
+        height: 49px;
+        margin-right: 0%;
+        float: right;
+        right: 0px;
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 750px) {
+    .Rectangle-searchInputbtn {
+        width: 13%;
+        height: 49px;
+        margin-right: 0%;
+        float: right;
+        right: 0px;
+        background-color: #ffffff;
+    }
+    .Rectangle-1 {
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        height: 80px;
+        box-shadow: inset 0px -1px 0 0 #eeeeee;
+        background-color: #ffffff;
+    }
+    .gnb_logo {
+        width: 160px;
+        margin-left: 26px;
+        margin-right: auto;
+    }
+    .ic_search_m {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+    .custom-toggler {
+        width: 50px;
+        height: 50px;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 350px) {
+    .Rectangle-1 {
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        height: 70px;
+        box-shadow: inset 0px -1px 0 0 #eeeeee;
+        background-color: #ffffff;
+    }
+    .gnb_logo {
+        width: 148px;
+        margin-left: 28px;
+    }
+}
+
+
+
+@media (min-width: 992px){}
+.col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 520px;
+}

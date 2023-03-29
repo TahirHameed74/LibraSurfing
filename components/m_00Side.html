@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/colors/nav-menu.css" type="text/css" />
+    <title>m_00Side</title>
+    <style type="text/css">
+        .container-fluid {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 0.5vh;
+        }
+
+        .btn {
+            border-radius: 0rem;
+        }
+
+        .Rectangle-5 {
+            max-width: unset !important;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 2520px) {
+            .Rectangle-1 {
+                display: flex;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: unset;
+            }
+            .mainscreenn {
+                max-width: unset;
+                margin: 0 !important;
+            }
+            .nav-text1.diff,
+            .nav-text2.diff,
+            .nav-text3.diff {
+                font-size: 0.8vw;
+                margin-top: 1.2vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="mainscreenn">
+    <div class="Rectangle-1">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button id=navbarexpandbtn class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavbarSupportedContent"
+                aria-controls="collapsedNavbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" onclick=navbarButtonHandler()></span>
+            </button>
+
+
+
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/gnb-logo.png" class="gnb_logo float-center" />
+            </a>
+
+
+            <button class="btn navbar-btn search-btn" type="button" onclick=searchbarDisplay()>
+                <img id="searchButtonimg" src="../assets/img/ic-search-m.png" srcset="../assets/img/ic-search-m@2x.png 2x,
+      ../assets/img/ic-search-m@3x.png 3x" class="ic_search_m col-sm" />
+            </button>
+
+            <div class="Rectangle-collapse-searchBar" id="searchBar">
+
+                <form class="form-inline">
+
+                    <input class="Rectangle-searchInput col-sm" type="search" aria-label="Search" placeholder="검색어를 입력해주세요.">
+                    <button class="btn navbar-btn Rectangle-searchInputbtn" type="submit">
+                        <img src="../assets/img/ic-search-m.png" srcset="../assets/img/ic-search-m@2x.png 2x,
+                    ../assets/img/ic-search-m@3x.png 3x" class="ic_search_m col-sm" />
+                    </button>
+                    </input>
+                </form>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-0 ml-0 justify-content-center navbarExpandPortion">
+                    <li class="nav-item active my-2 my-lg-2 col-sm-2 col-md-2 col-lg-8 ">
+                        <form class="form-inline">
+
+                            <input class="Rectangle-3 col-sm" type="search" aria-label="Search" />
+                            <button class="btn navbar-btn Rectangle-4 " type="submit">
+                                <img src="../assets/img/ic-search.png" srcset="../assets/img/ic-search@2x.png 2x,
+                      ../assets/img/ic-search@3x.png 3x" class="ic_search">
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-list.png" srcset="../assets/img/gnb-list@2x.png 2x,
+                      ../assets/img/gnb-list@3x.png 3x" class="gnb_list diff Rectangle-100">
+                                <p class="nav-text1 diff">거래목록</p>
+                                </img>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-graph.png" srcset="../assets/img/gnb-graph@2x.png 2x,
+                      ../assets/img/gnb-graph@3x.png 3x" class="gnb_graph diff Rectangle-100">
+                                <p class="nav-text2 diff">통계</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="Rectangle-9">
+
+                            <a class="nav-link" href="#">
+                                <img src="../assets/img/gnb-rank.png" srcset="../assets/img/gnb-rank@2x.png 2x,
+                      ../assets/img/gnb-rank@3x.png 3x" class="gnb_rank diff Rectangle-100">
+                                <p class="nav-text3 diff">순의</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="collapse navbar-collapse collapsed-navbar" id="collapsedNavbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto justify-content-center">
+
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns ">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-list.png" srcset="../assets/img/gnb-list@2x.png 2x,
+                    ../assets/img/gnb-list@3x.png 3x" class="gnb_list_compressed">
+                        <p class="nav-text1_compressed">거래목록</p>
+                        </img>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns ">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-graph.png" srcset="../assets/img/gnb-graph@2x.png 2x,
+                    ../assets/img/gnb-graph@3x.png 3x" class="gnb_graph_compressed">
+                        <p class="nav-text2_compressed">통계</p>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="Rectangle-collapse-btns">
+
+                    <a class="nav-link" href="#">
+                        <img src="../assets/img/gnb-rank.png" srcset="../assets/img/gnb-rank@2x.png 2x,
+                    ../assets/img/gnb-rank@3x.png 3x" class="gnb_rank_compressed">
+                        <p class="nav-text3_compressed">순의</p>
+                        <img src="../assets/img/ic-side-more.png" srcset="../assets/img/ic-side-more@2x.png 2x,
+                    ../assets/img/ic-side-more@3x.png 3x" class="ic_side_more float-right">
+                    </a>
+                </div>
+            </li>
+    </div>
+    </nav>
+    </div>
+    <script>
+        function searchbarDisplay() {
+
+            if (document.getElementById("searchBar").style.display == "block") {
+                document.getElementById("searchBar").style.display = "none";
+                document.getElementById("searchButtonimg").src = "../assets/img/ic-search-m.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/ic-search-m@2x.png 2x,../assets/img/ic-search-m@3x.png 3x";
+
+            } else {
+                var x = document.getElementById("navbarexpandbtn");
+                if (x.getAttribute("aria-expanded") == 'true') {
+                    x.click();
+
+                }
+                document.getElementById("searchBar").style.display = "block";
+                document.getElementById("searchButtonimg").src = "../assets/img/gnb-close.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/gnb-close@2x.png 2x,../assets/img/gnb-close@3x.png 3x";
+
+            }
+        }
+
+        function navbarButtonHandler() {
+            if (document.getElementById("searchBar").style.display == "block") {
+                document.getElementById("searchBar").style.display = "none";
+                document.getElementById("searchButtonimg").src = "../assets/img/ic-search-m.png";
+                document.getElementById("searchButtonimg").srcset = "../assets/img/ic-search-m@2x.png 2x,../assets/img/ic-search-m@3x.png 3x";
+            }
+
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
